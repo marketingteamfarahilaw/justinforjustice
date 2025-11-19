@@ -1,0 +1,277 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f8f9fa;
+}
+.multi-step-form {
+  position: relative;
+  padding: 30px;
+  padding-bottom: 100px;
+  box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  background-color: #FFBB1A;
+}
+.la-fire-multi-step-form {
+  padding-bottom: 65px;
+}
+.multi-step-form .progress{
+  border: 1px solid #021D38;
+  border-radius: 30px;
+  display: none;
+}
+.multi-step-form .progress-bar {
+  background-color: #021D38;
+  text-align: center;
+  color: #000;
+  border-radius: 30px;
+  font-size: 12px;
+  padding: 2px;
+}
+.multi-step-form .buttons {
+  position: absolute;
+  right: 30px;
+  bottom: 10px;
+  /* transform: translateX(-50%); */
+}
+.multi-step-form .btn-continue {
+
+}
+.multi-step-form .buttons {
+  gap: 5px;
+}
+.multi-step-form .buttons button {
+  border-radius: 3px;
+  background-color: #021D38;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  font-size: 18px;
+}
+.multi-step-form .buttons button i {
+  color: #fff;
+}
+.multi-step-form .btn-flf {
+  background-color: #021D38;
+  color: #fff;
+  border-radius: 3px;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: normal;
+}
+.multi-step-form .btn-flf span {
+  font-weight: 700;
+}
+.multi-step-form .step {
+  display: none;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+.multi-step-form .active-step {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+.multi-step-form .form-text {
+  font-family: "Roboto", sans-serif;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+.multi-step-form .custom-control-input {
+  display: none;
+}
+.multi-step-form .custom-control-label {
+  background-color: #ffff;
+  color: #021D38;
+  padding: 15px 3px;
+  border-radius: 3px;
+  box-shadow: 0px 0px 12px 2px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  display: block;
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+}
+.multi-step-form .custom-control-label:hover {
+  background-color: #021D38;
+  color: #fff;
+}
+.la-fire-multi-step-form .custom-control-label {
+  background-color: #021D38;
+  color: #FFF;
+}
+.la-fire-multi-step-form .custom-control-label:hover {
+  background-color: #FFF;
+  color: #021D38;
+}
+.multi-step-form .custom-control-input:checked + label {
+  background-color: #FFF;
+  color: #021D38;
+}
+.multi-step-form .form-control {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  box-sizing: border-box;
+  border: 1px solid lightgray;
+  border-radius: 3px;
+  font-size: 16px;
+  font-weight: 500;
+}
+.multi-step-form .form-control:focus {
+  border: 1px solid lightgray;
+  outline: none;
+}
+.multi-step-form .btn-submit,
+.multi-step-form .btn-continue,
+.thanks .btn-continue {
+  background-color: #021D38;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: #fff;
+  margin-top: 15px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  border-radius: 3px;
+  border: none;
+  padding: 12px 25px;
+  cursor: pointer;
+}
+.multi-step-form .custom-label-review {
+  min-width: 260px;
+}
+.multi-step-form .main-label {
+  font-weight: 900;
+  font-family: 'Roboto', sans-serif;
+  color: #021D38;
+  font-size: 18px;
+  margin-bottom: 20px;
+  display: block;
+}
+.la-fire-multi-step-form .large-label {
+  font-weight: 900;
+  font-family: 'Roboto', sans-serif;
+  color: #021D38;
+  font-size: 30px;
+  line-height: 40px;
+  margin-bottom: 10px;
+  display: block;
+  text-align: center;
+}
+.la-fire-multi-step-form .main-label {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 32px;
+  text-align: center;
+}
+.la-fire-multi-step-form .disclaimer-label {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 25px;
+  text-align: center;
+}
+.multi-step-form .label-description {
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+  color: #464646;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+.multi-step-form #step7 .form-label {
+  font-size: 30px;
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+  color: #464646;
+}
+.multi-step-form .form-check {
+  gap: 5px;
+}
+.multi-step-form .form-check-input {
+  margin-top: 5px;
+}
+.multi-step-form .form-check-label {
+  margin-top: 5px;
+}
+.multi-step-form .form-check-label p {
+  font-size: 12px;
+  color: #464646;
+  line-height: 15px;
+  margin-bottom: 10px;
+}
+.multi-step-form .form-check-input:checked {
+  background-color: #021D38;
+  border-color: #021D38;
+}
+.multi-step-form .alert-danger {
+  font-family: "Evolventa", Sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  background-color: #f8d7da;
+  border: 1px solid #f1aeb5;
+  color: #58151c;
+  padding: 10px;
+  border-radius: 3px;
+  text-align: center;
+}
+.multi-step-form .alert-success {
+  font-family: "Evolventa", Sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  background-color: #d1e7dd;
+  border: 1px solid #a3cfbb;
+  color: #0a3622;
+  padding: 10px;
+  border-radius: 3px;
+  text-align: center;
+}
+.thanks {
+  background-color: #fff;
+  box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+}
+.thanks h2 {
+  color: #021D38;
+  font-size: 25px;
+}
+.thanks p {
+  color: #464646;
+}
+.label-term-condition {
+  font-size: 12px;
+  line-height: 20px;
+  color: #333;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.spinner {
+  animation: spin 1s linear infinite;
+  display: inline-block;
+  color: #fff;
+  font-size: 25px;
+}
+.autocomplete-items {
+  height: auto;
+  max-height: 170px;
+  border-radius: 3px;
+  overflow: auto;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid lightgray;
+}
+
+.autocomplete-items div {
+  padding: 7px 15px;
+}
+
+.autocomplete-items div:hover {
+  background-color: #ECF1F2;
+}
