@@ -1,0 +1,7934 @@
+{
+  "Website": {
+    "item": {
+      "isGroup": true,
+      "isRequired": false,
+      "isRecommended": false
+    },
+    "headline": {
+      "item": {
+        "isGroup": false,
+        "isRequired": true,
+        "isRecommended": false,
+        "isPattern": true,
+        "field": {
+          "label": "Headline",
+          "placeholder": "{{title}}"
+        }
+      }
+    },
+    "description": {
+      "item": {
+        "isGroup": false,
+        "isRequired": false,
+        "isRecommended": true,
+        "isPattern": true,
+        "field": {
+          "type": "textarea",
+          "label": "Description",
+          "placeholder": "{{excerpt}}"
+        }
+      }
+    },
+    "author": {
+      "item": {
+        "isGroup": true,
+        "isRequired": false,
+        "isRecommended": false,
+        "isPattern": false,
+        "isAdvanced": true
+      },
+      "type": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": false,
+          "value": "Person"
+        }
+      },
+      "name": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": false,
+          "field": {
+            "label": "Author Name",
+            "placeholder": "{{name}}"
+          }
+        }
+      }
+    },
+    "datePublished": {
+      "item": {
+        "isGroup": false,
+        "isRequired": true,
+        "isRecommended": false,
+        "isPattern": false,
+        "isAdvanced": true,
+        "field": {
+          "type": "datetimepicker",
+          "label": "Published Date",
+          "default": "{{date}}",
+          "classes": "sq-col-6"
+        }
+      }
+    },
+    "dateModified": {
+      "item": {
+        "isGroup": false,
+        "isRequired": false,
+        "isRecommended": true,
+        "isPattern": false,
+        "isAdvanced": true,
+        "field": {
+          "type": "datetimepicker",
+          "label": "Modified Date",
+          "default": "{{modified}}",
+          "classes": "sq-col-6"
+        }
+      }
+    },
+    "image": {
+      "item": {
+        "isGroup": true,
+        "isRequired": false,
+        "isRecommended": false,
+        "isPattern": false,
+        "isAdvanced": true
+      },
+      "type": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": false,
+          "value": "ImageObject"
+        }
+      },
+      "url": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": false,
+          "field": {
+            "label": "Image URL",
+            "placeholder": "{{image}}"
+          }
+        }
+      },
+      "width": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "isAdvanced": true,
+          "field": {
+            "type": "number",
+            "label": "Image Width"
+          }
+        }
+      },
+      "height": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "isAdvanced": true,
+          "field": {
+            "type": "number",
+            "label": "Image Height"
+          }
+        }
+      }
+    },
+    "keywords": {
+      "item": {
+        "isGroup": false,
+        "isRequired": false,
+        "isRecommended": true,
+        "isPattern": true,
+        "isAdvanced": true,
+        "field": {
+          "label": "Keywords",
+          "default": "{{keyword}}",
+          "help": "Separate multiple entries with commas."
+        }
+      }
+    }
+  },
+  "Article": {
+    "item": {
+      "isGroup": true,
+      "isRequired": false,
+      "isRecommended": false
+    },
+    "type": {
+      "item": {
+        "isGroup": false,
+        "isRequired": true,
+        "isRecommended": false,
+        "isPattern": false,
+        "field": {
+          "type": "radio",
+          "label": "Article Type",
+          "options": {
+            "Article": "Article",
+            "NewsArticle": "News Article",
+            "BlogPosting": "Blog Post"
+          },
+          "notice": {
+            "status": "warning",
+            "className": "article-notice",
+            "content": "Google does not allow Person as the Publisher for articles. Organization will be used instead."
+          }
+        }
+      }
+    },
+    "headline": {
+      "item": {
+        "isGroup": false,
+        "isRequired": true,
+        "isRecommended": false,
+        "isPattern": true,
+        "field": {
+          "label": "Headline",
+          "placeholder": "{{title}}"
+        }
+      }
+    },
+    "description": {
+      "item": {
+        "isGroup": false,
+        "isRequired": false,
+        "isRecommended": true,
+        "isPattern": true,
+        "field": {
+          "type": "textarea",
+          "label": "Description",
+          "placeholder": "{{excerpt}}"
+        }
+      }
+    },
+    "author": {
+      "item": {
+        "isGroup": true,
+        "isRequired": false,
+        "isRecommended": false,
+        "isPattern": false,
+        "isAdvanced": true
+      },
+      "type": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": false,
+          "value": "Person"
+        }
+      },
+      "name": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": false,
+          "field": {
+            "label": "Author Name",
+            "placeholder": "{{name}}"
+          }
+        }
+      }
+    },
+    "datePublished": {
+      "item": {
+        "isGroup": false,
+        "isRequired": true,
+        "isRecommended": false,
+        "isAdvanced": true,
+        "field": {
+          "type": "datetimepicker",
+          "label": "Published Date",
+          "default": "{{date}}",
+          "classes": "sq-col-6"
+        }
+      }
+    },
+    "dateModified": {
+      "item": {
+        "isGroup": false,
+        "isRequired": false,
+        "isRecommended": true,
+        "isAdvanced": true,
+        "field": {
+          "type": "datetimepicker",
+          "label": "Modified Date",
+          "default": "{{modified}}",
+          "classes": "sq-col-6"
+        }
+      }
+    },
+    "image": {
+      "item": {
+        "isGroup": true,
+        "isRequired": false,
+        "isRecommended": false,
+        "isPattern": false,
+        "isAdvanced": true
+      },
+      "type": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": false,
+          "value": "ImageObject"
+        }
+      },
+      "url": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": false,
+          "field": {
+            "label": "Image URL",
+            "placeholder": "{{image}}"
+          }
+        }
+      },
+      "width": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "isAdvanced": true,
+          "field": {
+            "type": "number",
+            "label": "Image Width"
+          }
+        }
+      },
+      "height": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "isAdvanced": true,
+          "field": {
+            "type": "number",
+            "label": "Image Height"
+          }
+        }
+      }
+    },
+    "keywords": {
+      "item": {
+        "isGroup": false,
+        "isRequired": false,
+        "isRecommended": true,
+        "isPattern": true,
+        "isAdvanced": true,
+        "field": {
+          "label": "Keywords",
+          "default": "{{keyword}}",
+          "help": "Separate multiple entries with commas."
+        }
+      }
+    }
+  },
+  "Newsarticle": {
+    "item": {
+      "isGroup": true,
+      "isRequired": false,
+      "isRecommended": false
+    },
+    "type": {
+      "item": {
+        "isGroup": false,
+        "isRequired": true,
+        "isRecommended": false,
+        "isPattern": false,
+        "field": {
+          "type": "radio",
+          "label": "Article Type",
+          "options": {
+            "NewsArticle": "News Article",
+            "Article": "Article",
+            "BlogPosting": "Blog Post"
+          },
+          "notice": {
+            "status": "warning",
+            "className": "article-notice",
+            "content": "Google does not allow Person as the Publisher for articles. Organization will be used instead."
+          }
+        }
+      }
+    },
+    "headline": {
+      "item": {
+        "isGroup": false,
+        "isRequired": true,
+        "isRecommended": false,
+        "isPattern": true,
+        "field": {
+          "label": "Headline",
+          "placeholder": "{{title}}"
+        }
+      }
+    },
+    "description": {
+      "item": {
+        "isGroup": false,
+        "isRequired": false,
+        "isRecommended": true,
+        "isPattern": true,
+        "field": {
+          "type": "textarea",
+          "label": "Description",
+          "placeholder": "{{excerpt}}"
+        }
+      }
+    },
+    "author": {
+      "item": {
+        "isGroup": true,
+        "isRequired": false,
+        "isRecommended": false,
+        "isPattern": false,
+        "isAdvanced": true
+      },
+      "type": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": false,
+          "value": "Person"
+        }
+      },
+      "name": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": false,
+          "field": {
+            "label": "Author Name",
+            "placeholder": "{{name}}"
+          }
+        }
+      }
+    },
+    "datePublished": {
+      "item": {
+        "isGroup": false,
+        "isRequired": true,
+        "isRecommended": false,
+        "isAdvanced": true,
+        "field": {
+          "type": "datetimepicker",
+          "label": "Published Date",
+          "default": "{{date}}",
+          "classes": "sq-col-6"
+        }
+      }
+    },
+    "dateModified": {
+      "item": {
+        "isGroup": false,
+        "isRequired": false,
+        "isRecommended": true,
+        "isAdvanced": true,
+        "field": {
+          "type": "datetimepicker",
+          "label": "Modified Date",
+          "default": "{{modified}}",
+          "classes": "sq-col-6"
+        }
+      }
+    },
+    "image": {
+      "item": {
+        "isGroup": true,
+        "isRequired": false,
+        "isRecommended": false,
+        "isPattern": false,
+        "isAdvanced": true
+      },
+      "type": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": false,
+          "value": "ImageObject"
+        }
+      },
+      "url": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": false,
+          "field": {
+            "label": "Image URL",
+            "placeholder": "{{image}}"
+          }
+        }
+      },
+      "width": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "isAdvanced": true,
+          "field": {
+            "type": "number",
+            "label": "Image Width"
+          }
+        }
+      },
+      "height": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "isAdvanced": true,
+          "field": {
+            "type": "number",
+            "label": "Image Height"
+          }
+        }
+      }
+    },
+    "keywords": {
+      "item": {
+        "isGroup": false,
+        "isRequired": false,
+        "isRecommended": true,
+        "isPattern": true,
+        "isAdvanced": true,
+        "field": {
+          "label": "Keywords",
+          "default": "{{keyword}}",
+          "help": "Separate multiple entries with commas."
+        }
+      }
+    }
+  },
+  "Faqpage": {
+    "item": {
+      "isGroup": true,
+      "isRequired": false,
+      "isRecommended": false
+    },
+    "mainEntity": [
+      {
+        "item": {
+          "isGroup": true,
+          "isRequired": false,
+          "isRecommended": false,
+          "isPattern": false
+        },
+        "type": {
+          "item": {
+            "isGroup": false,
+            "isRequired": true,
+            "isRecommended": false,
+            "value": "Question"
+          }
+        },
+        "name": {
+          "item": {
+            "isGroup": false,
+            "isRequired": true,
+            "isRecommended": false,
+            "isPattern": true,
+            "field": {
+              "label": "Question",
+              "placeholder": "{{title}}"
+            }
+          }
+        },
+        "acceptedAnswer": {
+          "item": {
+            "isGroup": true,
+            "isRequired": false,
+            "isRecommended": false,
+            "isPattern": false
+          },
+          "type": {
+            "item": {
+              "isGroup": false,
+              "isRequired": true,
+              "isRecommended": false,
+              "value": "Answer"
+            }
+          },
+          "text": {
+            "item": {
+              "isGroup": false,
+              "isRequired": true,
+              "isRecommended": false,
+              "isPattern": true,
+              "field": {
+                "label": "Answer",
+                "placeholder": "{{excerpt}}"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "HowTo": {
+    "item": {
+      "isGroup": true,
+      "isRequired": false,
+      "isRecommended": false
+    },
+    "name": {
+      "item": {
+        "isGroup": false,
+        "isRequired": true,
+        "isRecommended": false,
+        "isPattern": true,
+        "field": {
+          "label": "Headline",
+          "placeholder": "{{title}}"
+        }
+      }
+    },
+    "description": {
+      "item": {
+        "isGroup": false,
+        "isRequired": false,
+        "isRecommended": true,
+        "isPattern": true,
+        "field": {
+          "type": "textarea",
+          "label": "Description",
+          "placeholder": "{{excerpt}}"
+        }
+      }
+    },
+    "totalTime": {
+      "item": {
+        "isGroup": false,
+        "isRequired": false,
+        "isRecommended": false,
+        "field": {
+          "label": "Total Time",
+          "help": "Example: P5DT11H5M",
+          "classes": "sq-col-4"
+        }
+      }
+    },
+    "estimatedCost": {
+      "item": {
+        "isGroup": true,
+        "isRequired": false,
+        "isRecommended": false
+      },
+      "type": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": false,
+          "value": "MonetaryAmount"
+        }
+      },
+      "value": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "field": {
+            "label": "Cost",
+            "help": "The estimated cost of the supplies consumed when performing instructions."
+          }
+        }
+      },
+      "currency": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "field": {
+            "label": "Currency",
+            "help": "ISO 4217 Currency code. Example: EUR"
+          }
+        }
+      }
+    },
+    "material": {
+      "item": {
+        "isGroup": false,
+        "isRequired": false,
+        "isRecommended": false,
+        "field": {
+          "type": "textarea",
+          "label": "Material"
+        }
+      }
+    },
+    "supply": [{
+      "item": {
+        "isGroup": true,
+        "isRequired": false,
+        "isRecommended": false
+      },
+      "type": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": false,
+          "value": "HowToSupply"
+        }
+      },
+      "name": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "field": {
+            "label": "Name"
+          }
+        }
+      }
+    }],
+    "tool": [{
+      "item": {
+        "isGroup": true,
+        "isRequired": false,
+        "isRecommended": false
+      },
+      "type": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": false,
+          "value": "HowToTool"
+        }
+      },
+      "name": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "field": {
+            "label": "Name"
+          }
+        }
+      }
+    }],
+    "step": [{
+      "item": {
+        "isGroup": true,
+        "isRequired": false,
+        "isRecommended": false
+      },
+      "type": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": false,
+          "value": "HowToStep"
+        }
+      },
+      "name": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "field": {
+            "label": "How To Step Name"
+          }
+        }
+      },
+      "url": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "field": {
+            "label": "URL",
+            "help": "How To Step Detail URL"
+          }
+        }
+      },
+      "image": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "field": {
+            "label": "Image",
+            "help": "How To Step Image"
+          }
+        }
+      },
+      "text": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "field": {
+            "type": "textarea",
+            "label": "Text"
+          }
+        }
+      }
+    }],
+    "image": {
+      "item": {
+        "isGroup": true,
+        "isRequired": false,
+        "isRecommended": false,
+        "isAdvanced": true
+
+      },
+      "type": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": false,
+          "value": "ImageObject"
+        }
+      },
+      "url": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": false,
+          "field": {
+            "label": "Image URL",
+            "placeholder": "{{image}}"
+          }
+        }
+      },
+      "width": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "isAdvanced": true,
+          "field": {
+            "type": "number",
+            "label": "Image Width"
+          }
+        }
+      },
+      "height": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "isAdvanced": true,
+          "field": {
+            "type": "number",
+            "label": "Image Height"
+          }
+        }
+      }
+    }
+  },
+  "Book": {
+    "item": {
+      "isGroup": true,
+      "isRequired": false,
+      "isRecommended": false
+    },
+    "name": {
+      "item": {
+        "isGroup": false,
+        "isRequired": true,
+        "isRecommended": false,
+        "isPattern": true,
+        "field": {
+          "label": "Headline",
+          "placeholder": "{{title}}"
+        }
+      }
+    },
+    "image": {
+      "item": {
+        "isGroup": true,
+        "isRequired": false,
+        "isRecommended": false,
+        "isAdvanced": true
+
+      },
+      "type": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": false,
+          "value": "ImageObject"
+        }
+      },
+      "url": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": false,
+          "field": {
+            "label": "Image URL",
+            "placeholder": "{{image}}"
+          }
+        }
+      },
+      "width": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "isAdvanced": true,
+          "field": {
+            "type": "number",
+            "label": "Image Width"
+          }
+        }
+      },
+      "height": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "isAdvanced": true,
+          "field": {
+            "type": "number",
+            "label": "Image Height"
+          }
+        }
+      }
+    },
+    "author": {
+      "item": {
+        "isGroup": true,
+        "isRequired": false,
+        "isRecommended": false,
+        "isAdvanced": true
+      },
+      "type": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": false,
+          "value": "Person"
+        }
+      },
+      "name": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": false,
+          "field": {
+            "label": "Author Name",
+            "placeholder": "{{name}}"
+          }
+        }
+      }
+    },
+    "sameAs": {
+      "item": {
+        "isGroup": false,
+        "isRequired": false,
+        "isRecommended": false,
+        "field": {
+          "label": "Reference URL"
+        }
+      }
+    },
+    "hasPart": {
+      "item": {
+        "isGroup": true,
+        "isRequired": false,
+        "isRecommended": false
+      },
+      "type": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": false,
+          "value": "Book"
+        }
+      },
+      "name": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": false,
+          "isPattern": true,
+          "field": {
+            "label": "Name",
+            "placeholder": "{{title}}"
+          }
+        }
+      },
+      "isbn": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": false,
+          "field": {
+            "label": "ISBN",
+            "placeholder": "0",
+            "classes": "sq-col-4"
+          }
+        }
+      },
+      "bookEdition": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": false,
+          "isPattern": true,
+          "field": {
+            "label": "Book Edition",
+            "placeholder": "{{category}}"
+          }
+        }
+      },
+      "inLanguage": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": false,
+          "field": {
+            "label": "Language",
+            "placeholder": "en",
+            "isAdvanced": true
+          }
+        }
+      },
+      "bookFormat": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": false,
+          "field": {
+            "type": "radio",
+            "label": "Book Format",
+            "options": {
+              "EBook": "eBook",
+              "Hardcover": "Hardcover",
+              "Paperback": "Paperback",
+              "AudioBook": "Audio Book"
+            }
+          }
+        }
+      }
+
+    },
+    "review": [{
+      "item": {
+        "isGroup": true,
+        "isRequired": false,
+        "isRecommended": false
+      },
+      "type": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": false,
+          "value": "Review"
+        }
+      },
+      "datePublished": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "isAdvanced": true,
+          "field": {
+            "type": "datetimepicker",
+            "label": "Published Date",
+            "placeholder": "{{date}}"
+          }
+        }
+      },
+      "dateModified": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "isAdvanced": true,
+          "field": {
+            "type": "datetimepicker",
+            "label": "Modified Date",
+            "placeholder": "{{modified}}"
+          }
+        }
+      },
+      "author": {
+        "item": {
+          "isGroup": true,
+          "isRequired": false,
+          "isRecommended": false,
+          "isAdvanced": true
+        },
+        "type": {
+          "item": {
+            "isGroup": false,
+            "isRequired": true,
+            "isRecommended": false,
+            "value": "Person"
+          }
+        },
+        "name": {
+          "item": {
+            "isGroup": false,
+            "isRequired": true,
+            "isRecommended": false,
+            "field": {
+              "label": "Author Name",
+              "placeholder": "{{name}}"
+            }
+          }
+        }
+      },
+      "reviewRating": {
+        "item": {
+          "isGroup": true,
+          "isRequired": false,
+          "isRecommended": false,
+          "isAdvanced": true
+        },
+        "type": {
+          "item": {
+            "isGroup": false,
+            "isRequired": true,
+            "isRecommended": false,
+            "value": "Rating"
+          }
+        },
+        "ratingValue": {
+          "item": {
+            "isGroup": false,
+            "isRequired": false,
+            "isRecommended": false,
+            "field": {
+              "type": "number",
+              "label": "Rating",
+              "help": "Rating score"
+            }
+          }
+        },
+        "worstRating": {
+          "item": {
+            "isGroup": false,
+            "isRequired": false,
+            "isRecommended": false,
+            "field": {
+              "type": "number",
+              "label": "Rating Minimum",
+              "help": "Rating minimum score",
+              "placeholder": 1
+            }
+          }
+        },
+        "bestRating": {
+          "item": {
+            "isGroup": false,
+            "isRequired": false,
+            "isRecommended": false,
+            "field": {
+              "type": "number",
+              "label": "Rating Maximum",
+              "help": "Rating maximum score",
+              "placeholder": 5
+            }
+          }
+        }
+      }
+    }]
+  },
+  "Course": {
+    "item": {
+      "isGroup": true,
+      "isRequired": false,
+      "isRecommended": false
+    },
+    "name": {
+      "item": {
+        "isGroup": false,
+        "isRequired": true,
+        "isRecommended": false,
+        "isPattern": true,
+        "field": {
+          "label": "Headline",
+          "placeholder": "{{title}}"
+        }
+      }
+    },
+    "description": {
+      "item": {
+        "isGroup": false,
+        "isRequired": false,
+        "isRecommended": true,
+        "isPattern": true,
+        "field": {
+          "type": "textarea",
+          "label": "Description",
+          "placeholder": "{{excerpt}}"
+        }
+      }
+    },
+    "provider": {
+      "item": {
+        "isGroup": true,
+        "isRequired": false,
+        "isRecommended": false,
+        "isAdvanced": true
+      },
+      "type": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": false,
+          "field": {
+            "type": "radio",
+            "label": "Course Provider",
+            "options": {
+              "Organization": "Organization",
+              "Person": "Person"
+            },
+            "default": "Organization"
+          }
+        }
+      },
+      "name": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "field": {
+            "label": "Course Provider Name"
+          }
+        }
+      },
+      "sameAs": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "field": {
+            "label": "Course Provider URL"
+          }
+        }
+      }
+    },
+    "image": {
+      "item": {
+        "isGroup": true,
+        "isRequired": false,
+        "isRecommended": false,
+        "isAdvanced": true
+
+      },
+      "type": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": false,
+          "value": "ImageObject"
+        }
+      },
+      "url": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": false,
+          "field": {
+            "label": "Image URL",
+            "placeholder": "{{image}}"
+          }
+        }
+      },
+      "width": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "isAdvanced": true,
+          "field": {
+            "type": "number",
+            "label": "Image Width"
+          }
+        }
+      },
+      "height": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "isAdvanced": true,
+          "field": {
+            "type": "number",
+            "label": "Image Height"
+          }
+        }
+      }
+    },
+    "offers": {
+      "item": {
+        "isGroup": true,
+        "isRequired": false,
+        "isRecommended": false,
+        "isAdvanced": false
+      },
+      "type": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": false,
+          "value": "Offer"
+        }
+      },
+      "name": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": true,
+          "field": {
+            "label": "Name",
+            "placeholder": "{{title}}"
+          }
+        }
+      },
+      "category": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": true,
+          "field": {
+            "label": "Category",
+            "type": "select",
+            "options": {
+              "Free": "Free",
+              "Partially Free": "Partially Free",
+              "Subscription": "Subscription",
+              "Paid": "Paid"
+            },
+            "help": "The pricing category of the course."
+          }
+        }
+      },
+      "price": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": true,
+          "field": {
+            "label": "Price",
+            "placeholder": 0,
+            "help": "The available price available for your course."
+          }
+        }
+      },
+      "priceCurrency": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": true,
+          "field": {
+            "label": "Currency",
+            "help": "ISO 4217 Currency code. Example: USD",
+            "classes": "sq-col-4"
+          }
+        }
+      }
+    },
+    "hasCourseInstance": {
+      "item": {
+        "isGroup": true,
+        "isRequired": false,
+        "isRecommended": false,
+        "isAdvanced": false
+      },
+      "type": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": false,
+          "value": "CourseInstance"
+        }
+      },
+      "courseMode": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": true,
+          "field": {
+            "label": "courseMode",
+            "type": "select",
+            "options": {
+              "Online": "Online",
+              "Onsite": "Onsite",
+              "Blended": "Blended"
+            }
+          }
+        }
+      },
+      "courseSchedule": {
+        "item": {
+          "isGroup": true,
+          "isRequired": false,
+          "isRecommended": false,
+          "isAdvanced": true
+
+        },
+        "type": {
+          "item": {
+            "isGroup": false,
+            "isRequired": true,
+            "isRecommended": false,
+            "value": "Schedule"
+          }
+        },
+        "repeatCount": {
+          "item": {
+            "isGroup": false,
+            "isRequired": false,
+            "isRecommended": false,
+            "isAdvanced": true,
+            "field": {
+              "type": "number",
+              "label": "Number Of Courses",
+              "help": "The numerical value for how long the course lasts for, in Frequency units.",
+              "classes": "sq-col-4",
+              "default": 1
+            }
+          }
+        },
+        "repeatFrequency": {
+          "item": {
+            "isGroup": false,
+            "isRequired": false,
+            "isRecommended": false,
+            "isAdvanced": true,
+            "field": {
+              "label": "Frequency",
+              "type": "select",
+              "default": "Weekly",
+              "help": "The duration and repeatCount properties are relative to this field.",
+              "options": {
+                "Daily": "Daily",
+                "Weekly": "Weekly",
+                "Monthly": "Monthly",
+                "Yearly": "Yearly"
+              }
+            }
+          }
+        },
+        "duration": {
+          "item": {
+            "isGroup": false,
+            "isRequired": false,
+            "isRecommended": true,
+            "field": {
+              "label": "Course Duration",
+              "help": "ISO 8601 duration format. Note! Don't specify the entire length of the course with this property.",
+              "default": "PT1H",
+              "classes": "sq-col-4"
+            }
+          }
+        },
+        "startDate": {
+          "item": {
+            "isGroup": false,
+            "isRequired": false,
+            "isRecommended": false,
+            "field": {
+              "type": "datetimepicker",
+              "label": "Start Date",
+              "help": "Date and time of the course",
+              "classes": "sq-col-4"
+            }
+          }
+        },
+        "endDate": {
+          "item": {
+            "isGroup": false,
+            "isRequired": false,
+            "isRecommended": false,
+            "field": {
+              "type": "datetimepicker",
+              "label": "End Date",
+              "help": "End date and time of the course",
+              "classes": "sq-col-4"
+            }
+          }
+        }
+      },
+      "instructor": {
+        "item": {
+          "isGroup": true,
+          "isRequired": false,
+          "isRecommended": false
+        },
+        "type": {
+          "item": {
+            "isGroup": false,
+            "isRequired": false,
+            "isRecommended": true,
+            "field": {
+              "label": "Instructor",
+              "default": "Person"
+            }
+          }
+        },
+        "name": {
+          "item": {
+            "isGroup": false,
+            "isRequired": false,
+            "isRecommended": true,
+            "field": {
+              "label": "Name",
+              "placeholder": "{{name}}"
+            }
+          }
+        },
+        "description": {
+          "item": {
+            "isGroup": false,
+            "isRequired": false,
+            "isRecommended": false,
+            "field": {
+              "label": "Description",
+              "placeholder": "{{excerpt}}"
+            }
+          }
+        },
+        "image": {
+          "item": {
+            "isGroup": true,
+            "isRequired": false,
+            "isRecommended": false,
+            "isAdvanced": true
+
+          },
+          "type": {
+            "item": {
+              "isGroup": false,
+              "isRequired": true,
+              "isRecommended": false,
+              "value": "ImageObject"
+            }
+          },
+          "url": {
+            "item": {
+              "isGroup": false,
+              "isRequired": true,
+              "isRecommended": false,
+              "field": {
+                "label": "Image URL",
+                "placeholder": "{{image}}"
+              }
+            }
+          },
+          "width": {
+            "item": {
+              "isGroup": false,
+              "isRequired": false,
+              "isRecommended": false,
+              "isAdvanced": true,
+              "field": {
+                "type": "number",
+                "label": "Image Width"
+              }
+            }
+          },
+          "height": {
+            "item": {
+              "isGroup": false,
+              "isRequired": false,
+              "isRecommended": false,
+              "isAdvanced": true,
+              "field": {
+                "type": "number",
+                "label": "Image Height"
+              }
+            }
+          }
+        }
+      }
+    },
+    "review": [{
+      "item": {
+        "isGroup": true,
+        "isRequired": false,
+        "isRecommended": false
+      },
+      "type": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": false,
+          "value": "Review"
+        }
+      },
+      "datePublished": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "isAdvanced": true,
+          "field": {
+            "type": "datetimepicker",
+            "label": "Published Date",
+            "placeholder": "{{date}}"
+          }
+        }
+      },
+      "dateModified": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "isAdvanced": true,
+          "field": {
+            "type": "datetimepicker",
+            "label": "Modified Date",
+            "placeholder": "{{modified}}"
+          }
+        }
+      },
+      "author": {
+        "item": {
+          "isGroup": true,
+          "isRequired": false,
+          "isRecommended": false,
+          "isAdvanced": true
+        },
+        "type": {
+          "item": {
+            "isGroup": false,
+            "isRequired": true,
+            "isRecommended": false,
+            "value": "Person"
+          }
+        },
+        "name": {
+          "item": {
+            "isGroup": false,
+            "isRequired": true,
+            "isRecommended": false,
+            "field": {
+              "label": "Author Name",
+              "placeholder": "{{name}}"
+            }
+          }
+        }
+      },
+      "reviewRating": {
+        "item": {
+          "isGroup": true,
+          "isRequired": false,
+          "isRecommended": false,
+          "isAdvanced": true
+        },
+        "type": {
+          "item": {
+            "isGroup": false,
+            "isRequired": true,
+            "isRecommended": false,
+            "value": "Rating"
+          }
+        },
+        "ratingValue": {
+          "item": {
+            "isGroup": false,
+            "isRequired": false,
+            "isRecommended": false,
+            "field": {
+              "type": "number",
+              "label": "Rating",
+              "help": "Rating score"
+            }
+          }
+        },
+        "worstRating": {
+          "item": {
+            "isGroup": false,
+            "isRequired": false,
+            "isRecommended": false,
+            "field": {
+              "type": "number",
+              "label": "Rating Minimum",
+              "help": "Rating minimum score",
+              "placeholder": 1
+            }
+          }
+        },
+        "bestRating": {
+          "item": {
+            "isGroup": false,
+            "isRequired": false,
+            "isRecommended": false,
+            "field": {
+              "type": "number",
+              "label": "Rating Maximum",
+              "help": "Rating maximum score",
+              "placeholder": 5
+            }
+          }
+        }
+      }
+    }]
+  },
+  "Event": {
+    "item": {
+      "isGroup": true,
+      "isRequired": false,
+      "isRecommended": false
+    },
+    "name": {
+      "item": {
+        "isGroup": false,
+        "isRequired": true,
+        "isRecommended": false,
+        "isPattern": true,
+        "field": {
+          "label": "Headline",
+          "placeholder": "{{title}}"
+        }
+      }
+    },
+    "description": {
+      "item": {
+        "isGroup": false,
+        "isRequired": false,
+        "isRecommended": true,
+        "isPattern": true,
+        "field": {
+          "type": "textarea",
+          "label": "Description",
+          "placeholder": "{{excerpt}}"
+        }
+      }
+    },
+    "type": {
+      "item": {
+        "isGroup": false,
+        "isRequired": false,
+        "isRecommended": false,
+        "field": {
+          "type": "select",
+          "label": "Event Type",
+          "help": "Type of the event",
+          "classes": "sq-col-4",
+          "options": {
+            "Event": "Event",
+            "BusinessEvent": "Business Event",
+            "ChildrensEvent": "Childrens Event",
+            "ComedyEvent": "Comedy Event",
+            "DanceEvent": "Dance Event",
+            "DeliveryEvent": "Delivery Event",
+            "EducationEvent": "Education Event",
+            "ExhibitionEvent": "Exhibition Event",
+            "Festival": "Festival",
+            "FoodEvent": "Food Event",
+            "LiteraryEvent": "Literary Event",
+            "MusicEvent": "Music Event",
+            "PublicationEvent": "Publication Event",
+            "SaleEvent": "Sale Event",
+            "ScreeningEvent": "Screening Event",
+            "SocialEvent": "Social Event",
+            "SportsEvent": "Sports Event",
+            "TheaterEvent": "Theater Event",
+            "VisualArtsEvent": "Visual Arts Event"
+          }
+        }
+      }
+    },
+    "eventStatus": {
+      "item": {
+        "isGroup": false,
+        "isRequired": false,
+        "isRecommended": true,
+        "field": {
+          "type": "select",
+          "label": "Event Status",
+          "help": "Current status of the event (optional)",
+          "options": {
+            "": "None",
+            "EventScheduled": "Scheduled",
+            "EventCancelled": "Cancelled",
+            "EventPostponed": "Postponed",
+            "EventRescheduled": "Rescheduled",
+            "EventMovedOnline": "Moved Online"
+          },
+          "classes": "sq-col-4",
+          "default": "EventScheduled"
+        }
+      }
+    },
+    "eventAttendanceMode": {
+      "item": {
+        "isGroup": false,
+        "isRequired": false,
+        "isRecommended": true,
+        "field": {
+          "type": "select",
+          "label": "Event Attendance Mode",
+          "help": "Indicates whether the event occurs online, offline at a physical location, or a mix of both online and offline.",
+          "options": {
+            "OfflineEventAttendanceMode": "Offline",
+            "OnlineEventAttendanceMode": "Online",
+            "MixedEventAttendanceMode": "Online + Offline"
+          },
+          "default": "Offline",
+          "classes": "sq-col-4"
+        }
+      }
+    },
+    "virtualLocation": {
+      "item": {
+        "isGroup": true,
+        "isRequired": false,
+        "isRecommended": false,
+        "isAdvanced": true
+      },
+      "type": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": false,
+          "value": "VirtualLocation"
+        }
+      },
+      "url": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "field": {
+            "type": "text",
+            "label": "Online Event URL",
+            "help": "The URL of the online event, where people can join. This property is required if your event is happening online"
+          },
+          "dependency": [
+            {
+              "field": "eventAttendanceMode",
+              "value": [
+                "OnlineEventAttendanceMode",
+                "MixedEventAttendanceMode"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "location": {
+      "item": {
+        "isGroup": true,
+        "isRequired": false,
+        "isRecommended": false,
+        "isAdvanced": true
+      },
+      "type": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": false,
+          "value": "Place"
+        }
+      },
+      "name": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "field": {
+            "label": "Venue Name",
+            "help": "The venue name."
+          },
+          "dependency": [
+            {
+              "field": "eventAttendanceMode",
+              "value": [
+                "OfflineEventAttendanceMode",
+                "MixedEventAttendanceMode"
+              ]
+            }
+          ]
+        }
+      },
+      "url": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "field": {
+            "label": "Venue URL",
+            "help": "Website URL of the venue"
+          }
+        }
+      },
+      "address": {
+        "item": {
+          "isGroup": true,
+          "isRequired": false,
+          "isRecommended": false
+        },
+        "type": {
+          "item": {
+            "isGroup": false,
+            "isRequired": true,
+            "isRecommended": false,
+            "value": "PostalAddress"
+          }
+        },
+        "streetAddress": {
+          "item": {
+            "isGroup": false,
+            "isRequired": false,
+            "isRecommended": false,
+            "field": {
+              "type": "text",
+              "label": "Street Address"
+            }
+          }
+        },
+        "addressLocality": {
+          "item": {
+            "isGroup": false,
+            "isRequired": false,
+            "isRecommended": false,
+            "field": {
+              "type": "text",
+              "label": "Locality"
+            }
+          }
+        },
+        "addressRegion": {
+          "item": {
+            "isGroup": false,
+            "isRequired": false,
+            "isRecommended": false,
+            "field": {
+              "type": "text",
+              "label": "Region"
+            }
+          }
+        },
+        "postalCode": {
+          "item": {
+            "isGroup": false,
+            "isRequired": false,
+            "isRecommended": false,
+            "field": {
+              "type": "text",
+              "label": "Postal Code"
+            }
+          }
+        },
+        "addressCountry": {
+          "item": {
+            "isGroup": false,
+            "isRequired": false,
+            "isRecommended": false,
+            "field": {
+              "type": "text",
+              "label": "Country"
+            }
+          }
+        }
+      }
+    },
+    "performer": {
+      "item": {
+        "isGroup": true,
+        "isRequired": false,
+        "isRecommended": false
+      },
+      "type": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": false,
+          "field": {
+            "type": "radio",
+            "label": "Performer",
+            "options": {
+              "Organization": "Organization",
+              "Person": "Person"
+            },
+            "default": "Person"
+          }
+        }
+      },
+      "name": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": true,
+          "field": {
+            "label": "Name"
+          }
+        }
+      },
+      "sameAs": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": true,
+          "field": {
+            "label": "Website or Social Link"
+          }
+        }
+      }
+    },
+    "organizer": {
+      "item": {
+        "isGroup": true,
+        "isRequired": false,
+        "isRecommended": false
+      },
+      "type": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": false,
+          "field": {
+            "type": "radio",
+            "label": "Organizer",
+            "options": {
+              "Organization": "Organization",
+              "Person": "Person"
+            },
+            "default": "Person"
+          }
+        }
+      },
+      "name": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": true,
+          "field": {
+            "label": "Name"
+          }
+        }
+      },
+      "url": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": true,
+          "field": {
+            "label": "Website or Social Link"
+          }
+        }
+      }
+    },
+    "startDate": {
+      "item": {
+        "isGroup": false,
+        "isRequired": false,
+        "isRecommended": false,
+        "field": {
+          "type": "datetimepicker",
+          "label": "Start Date",
+          "help": "Date and time of the event",
+          "classes": "sq-col-4"
+        }
+      }
+    },
+    "endDate": {
+      "item": {
+        "isGroup": false,
+        "isRequired": false,
+        "isRecommended": false,
+        "field": {
+          "type": "datetimepicker",
+          "label": "End Date",
+          "help": "End date and time of the event",
+          "classes": "sq-col-4"
+        }
+      }
+    },
+    "offers": {
+      "item": {
+        "isGroup": true,
+        "isRequired": false,
+        "isRecommended": false,
+        "isAdvanced": false
+      },
+      "type": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": false,
+          "value": "Offer"
+        }
+      },
+      "name": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": true,
+          "field": {
+            "label": "Name",
+            "placeholder": "General Admission"
+          }
+        }
+      },
+      "category": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": true,
+          "field": {
+            "label": "Category",
+            "placeholder": "{{primary_category}}"
+          }
+        }
+      },
+      "url": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": true,
+          "field": {
+            "label": "URL"
+          }
+        }
+      },
+      "price": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": true,
+          "field": {
+            "label": "Price",
+            "help": "The lowest available price available for your tickets, including service charges and fees."
+          }
+        }
+      },
+      "priceCurrency": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": true,
+          "field": {
+            "label": "Currency",
+            "help": "ISO 4217 Currency code. Example: USD",
+            "classes": "sq-col-4"
+          }
+        }
+      },
+      "availability": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": true,
+          "field": {
+            "type": "select",
+            "label": "Availability",
+            "help": "Offer availability",
+            "classes": "sq-col-4",
+            "options": {
+              "": "None",
+              "InStock": "In Stock",
+              "SoldOut": "Sold Out",
+              "PreOrder": "Preorder"
+            },
+            "default": "InStock"
+          }
+        }
+      },
+      "validFrom": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": true,
+          "field": {
+            "type": "datepicker",
+            "label": "Price Valid From",
+            "help": "The date from which the price becomes available"
+          }
+        }
+      },
+      "priceValidUntil": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "isAdvanced": true,
+          "field": {
+            "type": "datepicker",
+            "label": "Price Valid Until",
+            "help": "The date after which the price will no longer be available"
+          }
+        }
+      }
+    },
+    "review": [{
+      "item": {
+        "isGroup": true,
+        "isRequired": false,
+        "isRecommended": false
+      },
+      "type": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": false,
+          "value": "Review"
+        }
+      },
+      "datePublished": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "isAdvanced": true,
+          "field": {
+            "type": "datetimepicker",
+            "label": "Published Date",
+            "placeholder": "{{date}}"
+          }
+        }
+      },
+      "dateModified": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "isAdvanced": true,
+          "field": {
+            "type": "datetimepicker",
+            "label": "Modified Date",
+            "placeholder": "{{modified}}"
+          }
+        }
+      },
+      "author": {
+        "item": {
+          "isGroup": true,
+          "isRequired": false,
+          "isRecommended": false,
+          "isAdvanced": true
+        },
+        "type": {
+          "item": {
+            "isGroup": false,
+            "isRequired": true,
+            "isRecommended": false,
+            "value": "Person"
+          }
+        },
+        "name": {
+          "item": {
+            "isGroup": false,
+            "isRequired": true,
+            "isRecommended": false,
+            "field": {
+              "label": "Author Name",
+              "placeholder": "{{name}}"
+            }
+          }
+        }
+      },
+      "reviewRating": {
+        "item": {
+          "isGroup": true,
+          "isRequired": false,
+          "isRecommended": false,
+          "isAdvanced": true
+        },
+        "type": {
+          "item": {
+            "isGroup": false,
+            "isRequired": true,
+            "isRecommended": false,
+            "value": "Rating"
+          }
+        },
+        "ratingValue": {
+          "item": {
+            "isGroup": false,
+            "isRequired": false,
+            "isRecommended": false,
+            "field": {
+              "type": "number",
+              "label": "Rating",
+              "help": "Rating score"
+            }
+          }
+        },
+        "worstRating": {
+          "item": {
+            "isGroup": false,
+            "isRequired": false,
+            "isRecommended": false,
+            "field": {
+              "type": "number",
+              "label": "Rating Minimum",
+              "help": "Rating minimum score",
+              "placeholder": 1
+            }
+          }
+        },
+        "bestRating": {
+          "item": {
+            "isGroup": false,
+            "isRequired": false,
+            "isRecommended": false,
+            "field": {
+              "type": "number",
+              "label": "Rating Maximum",
+              "help": "Rating maximum score",
+              "placeholder": 5
+            }
+          }
+        }
+      }
+    }],
+    "image": {
+      "item": {
+        "isGroup": true,
+        "isRequired": false,
+        "isRecommended": false,
+        "isAdvanced": true
+
+      },
+      "type": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": false,
+          "value": "ImageObject"
+        }
+      },
+      "url": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": false,
+          "field": {
+            "label": "Image URL",
+            "placeholder": "{{image}}"
+          }
+        }
+      },
+      "width": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "isAdvanced": true,
+          "field": {
+            "type": "number",
+            "label": "Image Width"
+          }
+        }
+      },
+      "height": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "isAdvanced": true,
+          "field": {
+            "type": "number",
+            "label": "Image Height"
+          }
+        }
+      }
+    }
+  },
+  "PodcastEpisode": {
+    "item": {
+      "isGroup": true,
+      "isRequired": false,
+      "isRecommended": false
+    },
+    "name": {
+      "item": {
+        "isGroup": false,
+        "isRequired": true,
+        "isRecommended": false,
+        "isPattern": true,
+        "field": {
+          "label": "Headline",
+          "placeholder": "{{title}}"
+        }
+      }
+    },
+    "description": {
+      "item": {
+        "isGroup": false,
+        "isRequired": false,
+        "isRecommended": true,
+        "isPattern": true,
+        "field": {
+          "type": "textarea",
+          "label": "Description",
+          "placeholder": "{{excerpt}}"
+        }
+      }
+    },
+    "datePublished": {
+      "item": {
+        "isGroup": false,
+        "isRequired": false,
+        "isRecommended": false,
+        "field": {
+          "type": "datetimepicker",
+          "label": "Publish Date",
+          "classes": "sq-col-4",
+          "placeholder": "{{date}}"
+        }
+      }
+    },
+    "timeRequired": {
+      "item": {
+        "isGroup": false,
+        "isRequired": false,
+        "isRecommended": false,
+        "field": {
+          "label": "Episode Duration",
+          "help": "ISO 8601 duration format. Example: PT37M. <a href=https://tc39.es/proposal-temporal/docs/duration.html target=_blank>More details</a>",
+          "classes": "sq-col-4"
+        }
+      }
+    },
+    "url": {
+      "item": {
+        "isGroup": false,
+        "isRequired": true,
+        "isRecommended": false,
+        "field": {
+          "label": "Episode URL",
+          "classes": "sq-col-4",
+          "placeholder": "{{url}}"
+        }
+      }
+    },
+    "thumbnailUrl": {
+      "item": {
+        "isGroup": false,
+        "isRequired": false,
+        "isRecommended": false,
+        "field": {
+          "label": "Episode Image URL",
+          "classes": "sq-col-6",
+          "placeholder": "{{image}}"
+        }
+      }
+    },
+    "isFamilyFriendly": {
+      "item": {
+        "isGroup": false,
+        "isRequired": false,
+        "isRecommended": true,
+        "field": {
+          "type": "select",
+          "label": "Is episode family friendly?",
+          "classes": "sq-col-4",
+          "options": {
+            "false": "No",
+            "true": "Yes"
+          },
+          "default": "true"
+        }
+      }
+    },
+    "associatedMedia": {
+      "item": {
+        "isGroup": true,
+        "isRequired": false,
+        "isRecommended": false
+      },
+      "type": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": false,
+          "value": "MediaObject"
+        }
+      },
+      "contentUrl": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "field": {
+            "label": "Audio File URL",
+            "help": "Fully-qualified URL of the episode audio file, including the format extension (for example, .wav, .mp3)"
+          }
+        }
+      }
+    },
+    "partOfSeason": {
+      "item": {
+        "isGroup": true,
+        "isRequired": false,
+        "isRecommended": false
+      },
+      "type": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": false,
+          "value": "PodcastSeason"
+        }
+      },
+      "seasonNumber": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "field": {
+            "type": "number",
+            "label": "Season Number",
+            "help": "Position of the season within an ordered group of seasons (1, 2, 3, etc)."
+          }
+        }
+      },
+      "name": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "field": {
+            "label": "Season Name"
+          }
+        }
+      },
+      "url": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "field": {
+            "label": "Season URL"
+          }
+        }
+      }
+    },
+    "episodeNumber": {
+      "item": {
+        "isGroup": false,
+        "isRequired": false,
+        "isRecommended": false,
+        "field": {
+          "type": "number",
+          "label": "Episode Number",
+          "classes": "sq-col-6",
+          "help": "Position of the episode within an ordered group of episodes (1, 2, 3, etc)."
+        }
+      }
+    }
+  },
+  "JobPosting": {
+    "item": {
+      "isGroup": true,
+      "isRequired": false,
+      "isRecommended": false
+    },
+    "title": {
+      "item": {
+        "isGroup": false,
+        "isRequired": true,
+        "isRecommended": false,
+        "isPattern": true,
+        "field": {
+          "label": "Headline",
+          "placeholder": "{{title}}"
+        }
+      }
+    },
+    "description": {
+      "item": {
+        "isGroup": false,
+        "isRequired": false,
+        "isRecommended": true,
+        "isPattern": true,
+        "field": {
+          "type": "textarea",
+          "label": "Description",
+          "placeholder": "{{excerpt}}"
+        }
+      }
+    },
+    "baseSalary": {
+      "item": {
+        "isGroup": true,
+        "isRequired": false,
+        "isRecommended": false,
+        "isAdvanced": true
+      },
+      "type": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": false,
+          "value": "MonetaryAmount"
+        }
+      },
+      "currency": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "field": {
+            "label": "Salary Currency",
+            "help": "ISO 4217 Currency code. Example: USD",
+            "classes": "sq-col-4"
+          }
+        }
+      },
+      "value": {
+        "item": {
+          "isGroup": true,
+          "isRequired": false,
+          "isRecommended": false
+        },
+        "type": {
+          "item": {
+            "isGroup": false,
+            "isRequired": true,
+            "isRecommended": false,
+            "value": "QuantitativeValue"
+          }
+        },
+        "value": {
+          "item": {
+            "isGroup": false,
+            "isRequired": false,
+            "isRecommended": true,
+            "field": {
+              "label": "Salary (Recommended)",
+              "help": "Insert amount, e.g. 50.00, or a salary range, e.g. 40.00-50.00",
+              "classes": "sq-col-4"
+            }
+          }
+        },
+        "unitText": {
+          "item": {
+            "isGroup": false,
+            "isRequired": false,
+            "isRecommended": true,
+            "field": {
+              "type": "select",
+              "label": "Payroll (Recommended)",
+              "help": "Salary amount is for",
+              "options": {
+                "": "None",
+                "YEAR": "Yearly",
+                "MONTH": "Monthly",
+                "WEEK": "Weekly",
+                "DAY": "Daily",
+                "HOUR": "Hourly"
+              },
+              "classes": "sq-col-4"
+            }
+          }
+        }
+      }
+    },
+    "datePosted": {
+      "item": {
+        "isGroup": false,
+        "isRequired": false,
+        "isRecommended": false,
+        "field": {
+          "type": "datepicker",
+          "label": "Date Posted",
+          "help": "The original date on which employer posted the job. You can leave it empty to use the post publication date as job posted date",
+          "classes": "sq-col-4",
+          "placeholder": "{{date}}"
+        }
+      }
+    },
+    "validThrough": {
+      "item": {
+        "isGroup": false,
+        "isRequired": false,
+        "isRecommended": false,
+        "field": {
+          "type": "datepicker",
+          "label": "Expiry Posted",
+          "help": "The date when the job posting will expire. If a job posting never expires, or you do not know when the job will expire, do not include this property",
+          "classes": "sq-col-4"
+        }
+      }
+    },
+    "unpublish": {
+      "item": {
+        "isGroup": false,
+        "isRequired": true,
+        "isRecommended": false,
+        "field": {
+          "type": "select",
+          "label": "Unpublish when expired",
+          "options": {
+            "on": "Yes",
+            "off": "No"
+          },
+          "help": "If checked, post status will be changed to Draft and its URL will return a 404 error, as required by the Rich Result guidelines",
+          "classes": "sq-col-4",
+          "default": "on"
+        }
+      }
+    },
+    "employmentType": {
+      "item": {
+        "isGroup": false,
+        "isRequired": false,
+        "isRecommended": true,
+        "field": {
+          "type": "select",
+          "multiple": true,
+          "label": "Employment Type (Recommended)",
+          "help": "Type of employment. You can choose more than one value",
+          "options": {
+            "": "None",
+            "FULL_TIME": "Full Time",
+            "PART_TIME": "Part Time",
+            "CONTRACTOR": "Contractor",
+            "TEMPORARY": "Temporary",
+            "INTERN": "Intern",
+            "VOLUNTEER": "Volunteer",
+            "PER_DIEM": "Per Diem",
+            "OTHER": "Other"
+          },
+          "default": []
+        }
+      }
+    },
+    "hiringOrganization": {
+      "item": {
+        "isGroup": true,
+        "isRequired": false,
+        "isRecommended": false,
+        "isAdvanced": true
+      },
+      "type": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": false,
+          "value": "Organization"
+        }
+      },
+      "name": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "field": {
+            "label": "Hiring Organization",
+            "help": "The name of the company. Leave empty to use your own company information.",
+            "classes": "sq-col-4"
+          }
+        }
+      },
+      "sameAs": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": true,
+          "field": {
+            "label": "Organization URL (Recommended)",
+            "help": "The URL of the organization offering the job position. Leave empty to use your own company information",
+            "classes": "sq-col-6"
+          }
+        }
+      },
+      "logo": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": true,
+          "field": {
+            "label": "Organization Logo (Recommended)",
+            "help": "Logo URL of the organization offering the job position. Leave empty to use your own company information",
+            "classes": "sq-col-6"
+          }
+        }
+      }
+    },
+    "identifier": {
+      "item": {
+        "isGroup": true,
+        "isRequired": false,
+        "isRecommended": false,
+        "isAdvanced": true
+      },
+      "type": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": false,
+          "value": "PropertyValue"
+        }
+      },
+      "value": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": false,
+          "field": {
+            "label": "Posting ID (Recommended)",
+            "help": "The hiring organization's unique identifier for the job. Leave empty to use the post ID",
+            "classes": "sq-col-6",
+            "placeholder": "{{id}}"
+          }
+        }
+      },
+      "name": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "isAdvanced": true,
+          "field": {
+            "label": "Organization Name",
+            "help": "The organization name."
+          }
+        }
+      }
+    },
+    "jobLocation": {
+      "item": {
+        "isGroup": true,
+        "isRequired": false,
+        "isRecommended": false,
+        "isAdvanced": true
+      },
+      "type": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": false,
+          "value": "Place"
+        }
+      },
+      "name": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "isAdvanced": true,
+          "field": {
+            "label": "Venue Name",
+            "help": "The venue name."
+          }
+        }
+      },
+      "url": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "isAdvanced": true,
+          "field": {
+            "label": "Venue URL",
+            "help": "Website URL of the venue"
+          }
+        }
+      },
+      "address": {
+        "item": {
+          "isGroup": true,
+          "isRequired": false,
+          "isRecommended": false
+        },
+        "type": {
+          "item": {
+            "isGroup": false,
+            "isRequired": true,
+            "isRecommended": false,
+            "value": "PostalAddress"
+          }
+        },
+        "streetAddress": {
+          "item": {
+            "isGroup": false,
+            "isRequired": false,
+            "isRecommended": false,
+            "field": {
+              "type": "text",
+              "label": "Street Address"
+            }
+          }
+        },
+        "addressLocality": {
+          "item": {
+            "isGroup": false,
+            "isRequired": false,
+            "isRecommended": false,
+            "field": {
+              "type": "text",
+              "label": "Locality"
+            }
+          }
+        },
+        "addressRegion": {
+          "item": {
+            "isGroup": false,
+            "isRequired": false,
+            "isRecommended": false,
+            "field": {
+              "type": "text",
+              "label": "Region"
+            }
+          }
+        },
+        "postalCode": {
+          "item": {
+            "isGroup": false,
+            "isRequired": false,
+            "isRecommended": false,
+            "field": {
+              "type": "text",
+              "label": "Postal Code"
+            }
+          }
+        },
+        "addressCountry": {
+          "item": {
+            "isGroup": false,
+            "isRequired": false,
+            "isRecommended": false,
+            "field": {
+              "type": "text",
+              "label": "Country"
+            }
+          }
+        }
+      }
+    },
+    "image": {
+      "item": {
+        "isGroup": true,
+        "isRequired": false,
+        "isRecommended": false,
+        "isAdvanced": true
+      },
+      "type": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": false,
+          "value": "ImageObject"
+        }
+      },
+      "url": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": false,
+          "field": {
+            "label": "Image URL",
+            "placeholder": "{{image}}"
+          }
+        }
+      },
+      "width": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "isAdvanced": true,
+          "field": {
+            "type": "number",
+            "label": "Image Width"
+          }
+        }
+      },
+      "height": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "isAdvanced": true,
+          "field": {
+            "type": "number",
+            "label": "Image Height"
+          }
+        }
+      }
+    }
+  },
+  "Music": {
+    "item": {
+      "isGroup": true,
+      "isRequired": false,
+      "isRecommended": false
+    },
+    "name": {
+      "item": {
+        "isGroup": false,
+        "isRequired": true,
+        "isRecommended": false,
+        "isPattern": true,
+        "field": {
+          "label": "Headline",
+          "placeholder": "{{title}}"
+        }
+      }
+    },
+    "description": {
+      "item": {
+        "isGroup": false,
+        "isRequired": false,
+        "isRecommended": true,
+        "isPattern": true,
+        "field": {
+          "type": "textarea",
+          "label": "Description",
+          "placeholder": "{{excerpt}}"
+        }
+      }
+    },
+    "url": {
+      "item": {
+        "isGroup": false,
+        "isRequired": false,
+        "isRecommended": false,
+        "field": {
+          "label": "URL"
+        }
+      }
+    },
+    "type": {
+      "item": {
+        "isGroup": false,
+        "isRequired": false,
+        "isRecommended": false,
+        "field": {
+          "type": "radio",
+          "label": "Music Type",
+          "options": {
+            "MusicGroup": "MusicGroup",
+            "MusicAlbum": "MusicAlbum"
+          },
+          "default": "MusicGroup"
+        }
+      }
+    },
+    "image": {
+      "item": {
+        "isGroup": true,
+        "isRequired": false,
+        "isRecommended": false,
+        "isAdvanced": true
+
+      },
+      "type": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": false,
+          "value": "ImageObject"
+        }
+      },
+      "url": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": false,
+          "field": {
+            "label": "Image URL",
+            "placeholder": "{{image}}"
+          }
+        }
+      },
+      "width": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "isAdvanced": true,
+          "field": {
+            "type": "number",
+            "label": "Image Width"
+          }
+        }
+      },
+      "height": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "isAdvanced": true,
+          "field": {
+            "type": "number",
+            "label": "Image Height"
+          }
+        }
+      }
+    }
+  },
+  "Publisher": {
+    "item": {
+      "isGroup": true,
+      "isRequired": false,
+      "isRecommended": false
+    },
+    "name": {
+      "item": {
+        "isGroup": false,
+        "isRequired": true,
+        "isRecommended": false,
+        "isPattern": true,
+        "field": {
+          "label": "Company Name",
+          "placeholder": "{{org_name}}"
+        }
+      }
+    },
+    "description": {
+      "item": {
+        "isGroup": false,
+        "isRequired": false,
+        "isRecommended": true,
+        "isPattern": true,
+        "field": {
+          "type": "textarea",
+          "label": "Description",
+          "placeholder": "{{org_description}}"
+        }
+      }
+    },
+    "url": {
+      "item": {
+        "isGroup": false,
+        "isRequired": true,
+        "isRecommended": false,
+        "isPattern": true,
+        "field": {
+          "label": "Company URL",
+          "placeholder": "{{org_url}}"
+        }
+      }
+    },
+    "contactPoint": {
+      "item": {
+        "isGroup": true,
+        "isRequired": false,
+        "isRecommended": false
+      },
+      "type": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": false,
+          "value": "ContactPoint"
+        }
+      },
+      "telephone": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "field": {
+            "type": "text",
+            "label": "Phone",
+            "placeholder": "{{org_phone}}"
+          }
+        }
+      }
+    },
+    "address": {
+      "item": {
+        "isGroup": true,
+        "isRequired": false,
+        "isRecommended": false
+      },
+      "type": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": false,
+          "value": "PostalAddress"
+        }
+      },
+      "streetAddress": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "field": {
+            "type": "text",
+            "label": "Street Address"
+          }
+        }
+      },
+      "addressLocality": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "field": {
+            "type": "text",
+            "label": "Locality"
+          }
+        }
+      },
+      "addressRegion": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "field": {
+            "type": "text",
+            "label": "Region"
+          }
+        }
+      },
+      "postalCode": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "field": {
+            "type": "text",
+            "label": "Postal Code"
+          }
+        }
+      },
+      "addressCountry": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "field": {
+            "type": "text",
+            "label": "Country"
+          }
+        }
+      }
+    },
+    "socials": [
+      {
+        "item": {
+          "isGroup": true,
+          "isRequired": false,
+          "isRecommended": false,
+          "field": {
+            "label": "Profile URL",
+            "help": "Social profiles URLs of the company."
+          }
+        }
+      }
+    ],
+    "logo": {
+      "item": {
+        "isGroup": true,
+        "isRequired": true,
+        "isRecommended": false
+      },
+      "type": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": false,
+          "value": "ImageObject"
+        }
+      },
+      "url": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": false,
+          "field": {
+            "label": "Logo URL",
+            "placeholder": "{{org_logo}}",
+            "help": "The image must be 112x112px, at minimum"
+          }
+        }
+      }
+    }
+  },
+  "Profile": {
+    "item": {
+      "isGroup": true,
+      "isRequired": false,
+      "isRecommended": false
+    },
+    "name": {
+      "item": {
+        "isGroup": false,
+        "isRequired": true,
+        "isRecommended": false,
+        "isPattern": true,
+        "field": {
+          "label": "Headline",
+          "placeholder": "{{title}}"
+        }
+      }
+    },
+    "description": {
+      "item": {
+        "isGroup": false,
+        "isRequired": false,
+        "isRecommended": true,
+        "isPattern": true,
+        "field": {
+          "type": "textarea",
+          "label": "Description",
+          "help": "The user's byline or applicable credential, if applicable.",
+          "placeholder": "{{excerpt}}"
+        }
+      }
+    },
+    "email": {
+      "item": {
+        "isGroup": false,
+        "isRequired": false,
+        "isRecommended": false,
+        "field": {
+          "label": "Email"
+        }
+      }
+    },
+    "address": {
+      "item": {
+        "isGroup": true,
+        "isRequired": false,
+        "isRecommended": false
+      },
+      "type": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": false,
+          "value": "PostalAddress"
+        }
+      },
+      "streetAddress": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "field": {
+            "type": "text",
+            "label": "Street Address"
+          }
+        }
+      },
+      "addressLocality": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "field": {
+            "type": "text",
+            "label": "Locality"
+          }
+        }
+      },
+      "addressRegion": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "field": {
+            "type": "text",
+            "label": "Region"
+          }
+        }
+      },
+      "postalCode": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "field": {
+            "type": "text",
+            "label": "Postal Code"
+          }
+        }
+      },
+      "addressCountry": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "field": {
+            "type": "text",
+            "label": "Country"
+          }
+        }
+      }
+    },
+    "gender": {
+      "item": {
+        "isGroup": false,
+        "isRequired": false,
+        "isRecommended": false,
+        "field": {
+          "label": "Gender",
+          "classes": "sq-col-6"
+        }
+      }
+    },
+    "jobTitle": {
+      "item": {
+        "isGroup": false,
+        "isRequired": false,
+        "isRecommended": false,
+        "field": {
+          "label": "Job title",
+          "help": "The job title of the person (for example, Financial Manager).",
+          "classes": "sq-col-6"
+        }
+      }
+    },
+    "sameAs": {
+      "item": {
+        "isGroup": false,
+        "isRequired": false,
+        "isRecommended": false,
+        "field": {
+          "label": "SameAs",
+          "help": "Profile website or social link"
+        }
+      }
+    }
+  },
+  "Person": {
+    "item": {
+      "isGroup": true,
+      "isRequired": false,
+      "isRecommended": false
+    },
+    "name": {
+      "item": {
+        "isGroup": false,
+        "isRequired": true,
+        "isRecommended": false,
+        "isPattern": true,
+        "field": {
+          "label": "Headline",
+          "placeholder": "{{title}}"
+        }
+      }
+    },
+    "description": {
+      "item": {
+        "isGroup": false,
+        "isRequired": false,
+        "isRecommended": true,
+        "isPattern": true,
+        "field": {
+          "type": "textarea",
+          "label": "Description",
+          "placeholder": "{{excerpt}}"
+        }
+      }
+    },
+    "email": {
+      "item": {
+        "isGroup": false,
+        "isRequired": false,
+        "isRecommended": false,
+        "field": {
+          "label": "Email"
+        }
+      }
+    },
+    "address": {
+      "item": {
+        "isGroup": true,
+        "isRequired": false,
+        "isRecommended": false
+      },
+      "type": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": false,
+          "value": "PostalAddress"
+        }
+      },
+      "streetAddress": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "field": {
+            "type": "text",
+            "label": "Street Address"
+          }
+        }
+      },
+      "addressLocality": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "field": {
+            "type": "text",
+            "label": "Locality"
+          }
+        }
+      },
+      "addressRegion": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "field": {
+            "type": "text",
+            "label": "Region"
+          }
+        }
+      },
+      "postalCode": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "field": {
+            "type": "text",
+            "label": "Postal Code"
+          }
+        }
+      },
+      "addressCountry": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "field": {
+            "type": "text",
+            "label": "Country"
+          }
+        }
+      }
+    },
+    "gender": {
+      "item": {
+        "isGroup": false,
+        "isRequired": false,
+        "isRecommended": false,
+        "field": {
+          "label": "Gender",
+          "classes": "sq-col-6"
+        }
+      }
+    },
+    "jobTitle": {
+      "item": {
+        "isGroup": false,
+        "isRequired": false,
+        "isRecommended": false,
+        "field": {
+          "label": "Job title",
+          "help": "The job title of the person (for example, Financial Manager).",
+          "classes": "sq-col-6"
+        }
+      }
+    }
+  },
+  "Product": {
+    "item": {
+      "isGroup": true,
+      "isRequired": false,
+      "isRecommended": false
+    },
+    "name": {
+      "item": {
+        "isGroup": false,
+        "isRequired": true,
+        "isRecommended": false,
+        "isPattern": true,
+        "field": {
+          "label": "Product name",
+          "placeholder": "{{product_name}}"
+        }
+      }
+    },
+    "description": {
+      "item": {
+        "isGroup": false,
+        "isRequired": false,
+        "isRecommended": true,
+        "isPattern": true,
+        "field": {
+          "type": "textarea",
+          "label": "Description",
+          "placeholder": "{{excerpt}}"
+        }
+      }
+    },
+    "sku": {
+      "item": {
+        "isGroup": false,
+        "isRequired": false,
+        "isRecommended": true,
+        "field": {
+          "label": "Product SKU"
+        }
+      }
+    },
+    "brand": {
+      "item": {
+        "isGroup": true,
+        "isRequired": false,
+        "isRecommended": false,
+        "isAdvanced": true
+      },
+      "type": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": false,
+          "value": "Brand"
+        }
+      },
+      "name": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": true,
+          "field": {
+            "label": "Brand Name",
+            "placeholder": "{{category}}"
+          }
+        }
+      }
+    },
+    "image": {
+      "item": {
+        "isGroup": true,
+        "isRequired": false,
+        "isRecommended": false,
+        "isAdvanced": true
+
+      },
+      "type": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": false,
+          "value": "ImageObject"
+        }
+      },
+      "url": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": false,
+          "field": {
+            "label": "Image URL",
+            "placeholder": "{{image}}"
+          }
+        }
+      },
+      "width": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "isAdvanced": true,
+          "field": {
+            "type": "number",
+            "label": "Image Width"
+          }
+        }
+      },
+      "height": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "isAdvanced": true,
+          "field": {
+            "type": "number",
+            "label": "Image Height"
+          }
+        }
+      }
+    },
+    "gtin8": {
+      "item": {
+        "isGroup": false,
+        "isRequired": false,
+        "isRecommended": true,
+        "isAdvanced": true,
+        "field": {
+          "label": "Gtin",
+          "placeholder": "0",
+          "classes": "sq-col-4"
+        }
+      }
+    },
+    "mpn": {
+      "item": {
+        "isGroup": false,
+        "isRequired": false,
+        "isRecommended": true,
+        "isAdvanced": true,
+        "field": {
+          "label": "MPN",
+          "placeholder": "0",
+          "classes": "sq-col-4"
+        }
+      }
+    },
+    "isbn": {
+      "item": {
+        "isGroup": false,
+        "isRequired": false,
+        "isRecommended": true,
+        "isAdvanced": true,
+        "field": {
+          "label": "ISBN",
+          "placeholder": "0",
+          "classes": "sq-col-4"
+        }
+      }
+    },
+    "shipping": {
+      "item": {
+        "isGroup": false,
+        "isRequired": false,
+        "isRecommended": false,
+        "field": {
+          "type": "select",
+          "label": "Shipping Option",
+          "classes": "sq-col-4",
+          "options": {
+            "no": "No Shipping",
+            "yes": "With Shipping"
+          }
+        }
+      }
+    },
+    "return": {
+      "item": {
+        "isGroup": false,
+        "isRequired": false,
+        "isRecommended": false,
+        "field": {
+          "type": "select",
+          "label": "Return Option",
+          "classes": "sq-col-4",
+          "options": {
+            "no": "No Returns",
+            "yes": "With Returns"
+          }
+        }
+      }
+    },
+    "offers": {
+      "item": {
+        "isGroup": true,
+        "isRequired": false,
+        "isRecommended": false
+      },
+      "type": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": false,
+          "value": "Offer"
+        }
+      },
+      "category": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": true,
+          "isAdvanced": true,
+          "field": {
+            "label": "Category"
+          }
+        }
+      },
+      "url": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": true,
+          "isAdvanced": true,
+          "field": {
+            "label": "URL",
+            "placeholder": "{{url}}"
+          }
+        }
+      },
+      "priceSpecification": {
+        "item": {
+          "isGroup": true,
+          "isRequired": false,
+          "isRecommended": false
+        },
+        "type": {
+          "item": {
+            "isGroup": false,
+            "isRequired": true,
+            "isRecommended": false,
+            "value": "UnitPriceSpecification"
+          }
+        },
+        "price": {
+          "item": {
+            "isGroup": false,
+            "isRequired": false,
+            "isRecommended": true,
+            "field": {
+              "label": "Price"
+            }
+          }
+        },
+        "priceCurrency": {
+          "item": {
+            "isGroup": false,
+            "isRequired": false,
+            "isRecommended": true,
+            "field": {
+              "label": "Currency",
+              "help": "ISO 4217 Currency code. Example: USD",
+              "classes": "sq-col-4"
+            }
+          }
+        },
+        "valueAddedTaxIncluded": {
+          "item": {
+            "isGroup": false,
+            "isRequired": false,
+            "isRecommended": true,
+            "field": {
+              "type": "select",
+              "label": "Tax included",
+              "classes": "sq-col-4",
+              "options": {
+                "false": "No",
+                "true": "Yes"
+              },
+              "default": "false"
+            }
+          }
+        }
+      },
+      "availability": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": true,
+          "field": {
+            "type": "select",
+            "label": "Availability",
+            "help": "Offer availability",
+            "classes": "sq-col-4",
+            "options": {
+              "": "None",
+              "InStock": "In Stock",
+              "SoldOut": "Sold Out",
+              "PreOrder": "Preorder"
+            },
+            "default": "InStock"
+          }
+        }
+      },
+      "priceValidUntil": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": true,
+          "field": {
+            "type": "datepicker",
+            "label": "Price Valid Until",
+            "help": "The date after which the price will no longer be available"
+          }
+        }
+      },
+      "shippingDetails": {
+        "item": {
+          "isGroup": true,
+          "isRequired": false,
+          "isRecommended": false,
+          "isAdvanced": true,
+          "dependency" : [
+            {
+              "field": "shipping",
+              "value" : "yes"
+            }
+          ]
+        },
+        "type": {
+          "item": {
+            "isGroup": false,
+            "isRequired": true,
+            "isRecommended": false,
+            "value": "OfferShippingDetails"
+          }
+        },
+        "shippingRate": {
+          "item": {
+            "isGroup": true,
+            "isRequired": false,
+            "isRecommended": false,
+            "isAdvanced": true
+
+          },
+          "type": {
+            "item": {
+              "isGroup": false,
+              "isRequired": true,
+              "isRecommended": false,
+              "value": "MonetaryAmount"
+            }
+          },
+          "value": {
+            "item": {
+              "isGroup": false,
+              "isRequired": false,
+              "isRecommended": false,
+              "field": {
+                "label": "Value"
+              }
+            }
+          },
+          "currency": {
+            "item": {
+              "isGroup": false,
+              "isRequired": false,
+              "isRecommended": false,
+              "field": {
+                "label": "Currency",
+                "placeholder": "USD"
+              }
+
+            }
+          }
+        },
+        "shippingDestination": {
+          "item": {
+            "isGroup": true,
+            "isRequired": false,
+            "isRecommended": false,
+            "isAdvanced": true
+          },
+          "type": {
+            "item": {
+              "isGroup": false,
+              "isRequired": true,
+              "isRecommended": false,
+              "value": "DefinedRegion"
+            }
+          },
+          "addressCountry": {
+            "item": {
+              "isGroup": false,
+              "isRequired": false,
+              "isRecommended": false,
+              "field": {
+                "label": "Country",
+                "placeholder": "US"
+              }
+            }
+          },
+          "addressRegion": {
+            "item": {
+              "isGroup": false,
+              "isRequired": false,
+              "isRecommended": false,
+              "field": {
+                "label": "Region",
+                "placeholder": "NY"
+              }
+            }
+          }
+        },
+        "deliveryTime": {
+          "item": {
+            "isGroup": true,
+            "isRequired": false,
+            "isRecommended": false,
+            "isAdvanced": true
+          },
+          "type": {
+            "item": {
+              "isGroup": false,
+              "isRequired": false,
+              "isRecommended": false,
+              "value": "ShippingDeliveryTime"
+            }
+          },
+          "handlingTime": {
+            "item": {
+              "isGroup": true,
+              "isRequired": false,
+              "isRecommended": false,
+              "isAdvanced": true
+            },
+            "type": {
+              "item": {
+                "isGroup": false,
+                "isRequired": false,
+                "isRecommended": false,
+                "value": "QuantitativeValue"
+              }
+            },
+            "minValue": {
+              "item": {
+                "isGroup": false,
+                "isRequired": false,
+                "isRecommended": false,
+                "field": {
+                  "type": "number",
+                  "label": "Min Days"
+                }
+              }
+            },
+            "maxValue": {
+              "item": {
+                "isGroup": false,
+                "isRequired": false,
+                "isRecommended": false,
+                "field": {
+                  "type": "number",
+                  "label": "Max Days"
+                }
+              }
+            },
+            "unitCode": {
+              "item": {
+                "isGroup": false,
+                "isRequired": false,
+                "isRecommended": false,
+                "field": {
+                  "label": "Day Code",
+                  "default": "d"
+                }
+              }
+            }
+          },
+          "transitTime": {
+            "item": {
+              "isGroup": true,
+              "isRequired": false,
+              "isRecommended": false,
+              "isAdvanced": true
+            },
+            "type": {
+              "item": {
+                "isGroup": false,
+                "isRequired": false,
+                "isRecommended": false,
+                "value": "QuantitativeValue"
+              }
+            },
+            "minValue": {
+              "item": {
+                "isGroup": false,
+                "isRequired": false,
+                "isRecommended": false,
+                "field": {
+                  "type": "number",
+                  "label": "Min Days"
+                }
+              }
+            },
+            "maxValue": {
+              "item": {
+                "isGroup": false,
+                "isRequired": false,
+                "isRecommended": false,
+                "field": {
+                  "type": "number",
+                  "label": "Max Days"
+                }
+              }
+            },
+            "unitCode": {
+              "item": {
+                "isGroup": false,
+                "isRequired": false,
+                "isRecommended": false,
+                "field": {
+                  "label": "Day Code",
+                  "default": "d"
+                }
+              }
+            }
+          }
+
+        }
+      },
+      "hasMerchantReturnPolicy": {
+        "item": {
+          "isGroup": true,
+          "isRequired": false,
+          "isRecommended": false,
+          "isAdvanced": true,
+          "dependency" : [
+            {
+              "field": "return",
+              "value" : "yes"
+            }
+          ]
+        },
+        "type": {
+          "item": {
+            "isGroup": false,
+            "isRequired": true,
+            "isRecommended": false,
+            "value": "MerchantReturnPolicy"
+          }
+        },
+        "applicableCountry": {
+          "item": {
+            "isGroup": false,
+            "isRequired": false,
+            "isRecommended": false,
+            "field": {
+              "label": "Country",
+              "placeholder": "US"
+            }
+
+          }
+        },
+        "returnPolicyCategory": {
+          "item": {
+            "isGroup": false,
+            "isRequired": false,
+            "isRecommended": false,
+            "isPattern": false,
+            "field": {
+              "type": "radio",
+              "label": "Article Type",
+              "options": {
+                "MerchantReturnUnspecified": "Unspecified",
+                "MerchantReturnNotPermitted": "Not Permitted",
+                "MerchantReturnFiniteReturnWindow": "Finite Return Window",
+                "MerchantReturnUnlimitedWindow": "Unlimited Window"
+              },
+              "default": "MerchantReturnUnspecified"
+            }
+          }
+        },
+        "merchantReturnDays": {
+          "item": {
+            "isGroup": false,
+            "isRequired": false,
+            "isRecommended": false,
+            "field": {
+              "type": "number",
+              "label": "Return Days"
+            }
+          }
+        },
+        "returnMethod": {
+          "item": {
+            "isGroup": false,
+            "isRequired": false,
+            "isRecommended": false,
+            "isPattern": false,
+            "field": {
+              "type": "radio",
+              "label": "Return Method",
+              "options": {
+                "ReturnInStore": "In Store",
+                "ReturnByMail": "By Email",
+                "ReturnAtKiosk": "At Kiosk"
+              },
+              "default": "ReturnByMail"
+            }
+          }
+        },
+        "returnFees": {
+          "item": {
+            "isGroup": false,
+            "isRequired": false,
+            "isRecommended": false,
+            "isPattern": false,
+            "field": {
+              "type": "radio",
+              "label": "Return Fee",
+              "options": {
+                "FreeReturn": "Free Return",
+                "OriginalShippingFees": "Original Shipping Fees",
+                "RestockingFees": "Restocking Fees",
+                "ReturnShippingFees": "Return Shipping Fees",
+                "ReturnFeesCustomerResponsibility": "Customer Responsibility"
+              },
+              "default": "FreeReturn"
+            }
+          }
+        }
+      }
+
+    },
+    "review": [{
+      "item": {
+        "isGroup": true,
+        "isRequired": false,
+        "isRecommended": false
+      },
+      "type": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": false,
+          "value": "Review"
+        }
+      },
+      "datePublished": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "isAdvanced": true,
+          "field": {
+            "type": "datetimepicker",
+            "label": "Published Date",
+            "placeholder": "{{date}}"
+          }
+        }
+      },
+      "dateModified": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "isAdvanced": true,
+          "field": {
+            "type": "datetimepicker",
+            "label": "Modified Date",
+            "placeholder": "{{modified}}"
+          }
+        }
+      },
+      "author": {
+        "item": {
+          "isGroup": true,
+          "isRequired": false,
+          "isRecommended": false,
+          "isAdvanced": true
+        },
+        "type": {
+          "item": {
+            "isGroup": false,
+            "isRequired": true,
+            "isRecommended": false,
+            "value": "Person"
+          }
+        },
+        "name": {
+          "item": {
+            "isGroup": false,
+            "isRequired": true,
+            "isRecommended": false,
+            "field": {
+              "label": "Author Name",
+              "placeholder": "{{name}}"
+            }
+          }
+        }
+      },
+      "reviewRating": {
+        "item": {
+          "isGroup": true,
+          "isRequired": false,
+          "isRecommended": false,
+          "isAdvanced": true
+        },
+        "type": {
+          "item": {
+            "isGroup": false,
+            "isRequired": true,
+            "isRecommended": false,
+            "value": "Rating"
+          }
+        },
+        "ratingValue": {
+          "item": {
+            "isGroup": false,
+            "isRequired": false,
+            "isRecommended": false,
+            "field": {
+              "type": "number",
+              "label": "Rating",
+              "help": "Rating score"
+            }
+          }
+        },
+        "worstRating": {
+          "item": {
+            "isGroup": false,
+            "isRequired": false,
+            "isRecommended": false,
+            "field": {
+              "type": "number",
+              "label": "Rating Minimum",
+              "help": "Rating minimum score",
+              "placeholder": 1
+            }
+          }
+        },
+        "bestRating": {
+          "item": {
+            "isGroup": false,
+            "isRequired": false,
+            "isRecommended": false,
+            "field": {
+              "type": "number",
+              "label": "Rating Maximum",
+              "help": "Rating maximum score",
+              "placeholder": 5
+            }
+          }
+        }
+      }
+    }]
+
+  },
+  "Review": {
+    "item": {
+      "isGroup": true,
+      "isRequired": false,
+      "isRecommended": false
+    },
+    "type": {
+      "item": {
+        "isGroup": false,
+        "isRequired": true,
+        "isRecommended": false,
+        "value": "Review"
+      }
+    },
+    "datePublished": {
+      "item": {
+        "isGroup": false,
+        "isRequired": false,
+        "isRecommended": true,
+        "isAdvanced": true,
+        "field": {
+          "type": "datetimepicker",
+          "label": "Published Date",
+          "placeholder": "{{date}}"
+        }
+      }
+    },
+    "dateModified": {
+      "item": {
+        "isGroup": false,
+        "isRequired": false,
+        "isRecommended": true,
+        "isAdvanced": true,
+        "field": {
+          "type": "datetimepicker",
+          "label": "Modified Date",
+          "placeholder": "{{modified}}"
+        }
+      }
+    },
+    "itemReviewed": {
+      "item": {
+        "isGroup": true,
+        "isRequired": false,
+        "isRecommended": false
+      },
+      "type": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": false,
+          "field": {
+            "type": "radio",
+            "label": "Review For",
+            "options": {
+              "Restaurant": "Restaurant",
+              "Store": "Store",
+              "Book": "Book",
+              "Course": "Course",
+              "Recipe": "Recipe",
+              "Event": "Event",
+              "Movie": "Movie",
+              "Product": "Product",
+              "Game": "Game",
+              "Episode": "Episode",
+              "SoftwareApplication": "Software App"
+            }
+          }
+        }
+      },
+      "url": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": false,
+          "field": {
+            "label": "URL",
+            "help": "The canonical URL of the reviewed item. If the item is on this page, let the default URL pattern.",
+            "placeholder": "{{url}}"
+          }
+        }
+      },
+      "name": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": false,
+          "field": {
+            "label": "Name"
+          }
+        }
+      },
+      "image": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": false,
+          "field": {
+            "label": "Image",
+            "placeholder": "{{image}}"
+          }
+        }
+      }
+    },
+    "author": {
+      "item": {
+        "isGroup": true,
+        "isRequired": false,
+        "isRecommended": false,
+        "isAdvanced": true
+      },
+      "type": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": false,
+          "value": "Person"
+        }
+      },
+      "name": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": false,
+          "field": {
+            "label": "Author Name",
+            "placeholder": "{{name}}"
+          }
+        }
+      }
+    },
+    "reviewRating": {
+      "item": {
+        "isGroup": true,
+        "isRequired": false,
+        "isRecommended": true,
+        "isAdvanced": true
+      },
+      "type": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": false,
+          "value": "Rating"
+        }
+      },
+      "ratingValue": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "field": {
+            "type": "number",
+            "label": "Rating",
+            "help": "Rating score"
+          }
+        }
+      },
+      "worstRating": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "field": {
+            "type": "number",
+            "label": "Rating Minimum",
+            "help": "Rating minimum score",
+            "placeholder": 1
+          }
+        }
+      },
+      "bestRating": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "field": {
+            "type": "number",
+            "label": "Rating Maximum",
+            "help": "Rating maximum score",
+            "placeholder": 5
+          }
+        }
+      }
+    }
+  },
+  "AggregateRating": {
+    "item": {
+      "isGroup": true,
+      "isRequired": false,
+      "isRecommended": false
+    },
+    "type": {
+      "item": {
+        "isGroup": false,
+        "isRequired": true,
+        "isRecommended": false,
+        "value": "AggregateRating"
+      }
+    },
+    "itemReviewed": {
+      "item": {
+        "isGroup": true,
+        "isRequired": false,
+        "isRecommended": false
+      },
+      "type": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": false,
+          "field": {
+            "type": "radio",
+            "label": "Review For",
+            "options": {
+              "Restaurant": "Restaurant",
+              "Store": "Store",
+              "Book": "Book",
+              "Course": "Course",
+              "Recipe": "Recipe",
+              "Event": "Event",
+              "Movie": "Movie",
+              "Product": "Product",
+              "Game": "Game",
+              "Episode": "Episode",
+              "SoftwareApplication": "Software App"
+            }
+          }
+        }
+      },
+      "name": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": false,
+          "field": {
+            "label": "Name"
+          }
+        }
+      },
+      "image": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": false,
+          "field": {
+            "label": "Image",
+            "placeholder": "{{image}}"
+          }
+        }
+      }
+    },
+    "ratingValue": {
+      "item": {
+        "isGroup": false,
+        "isRequired": true,
+        "isRecommended": false,
+        "field": {
+          "type": "number",
+          "label": "Rating",
+          "help": "Rating score"
+        }
+      }
+    },
+    "bestRating": {
+      "item": {
+        "isGroup": false,
+        "isRequired": false,
+        "isRecommended": true,
+        "field": {
+          "type": "number",
+          "label": "Rating Maximum",
+          "help": "Rating maximum score",
+          "placeholder": 5
+        }
+      }
+    },
+    "worstRating": {
+      "item": {
+        "isGroup": false,
+        "isRequired": false,
+        "isRecommended": true,
+        "field": {
+          "type": "number",
+          "label": "Rating Minimum",
+          "help": "Rating minimum score",
+          "placeholder": 1
+        }
+      }
+    },
+    "ratingCount": {
+      "item": {
+        "isGroup": false,
+        "isRequired": true,
+        "isRecommended": false,
+        "field": {
+          "type": "number",
+          "label": "Rating Count",
+          "help": "The number of people who provided a review",
+          "placeholder": 1
+        }
+      }
+    }
+
+  },
+  "RealEstateListing": {
+    "item": {
+      "isGroup": true,
+      "isRequired": false,
+      "isRecommended": false
+    },
+    "name": {
+      "item": {
+        "isGroup": false,
+        "isRequired": true,
+        "isRecommended": false,
+        "isPattern": true,
+        "field": {
+          "label": "Headline",
+          "placeholder": "{{title}}"
+        }
+      }
+    },
+    "description": {
+      "item": {
+        "isGroup": false,
+        "isRequired": false,
+        "isRecommended": true,
+        "isPattern": true,
+        "field": {
+          "type": "textarea",
+          "label": "Description",
+          "placeholder": "{{excerpt}}"
+        }
+      }
+    },
+    "offers": {
+      "item": {
+        "isGroup": true,
+        "isRequired": false,
+        "isRecommended": false
+      },
+      "type": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": false,
+          "value": "Offer"
+        }
+      },
+      "name": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": true,
+          "isAdvanced": true,
+          "field": {
+            "label": "Name"
+          }
+        }
+      },
+      "category": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": true,
+          "isAdvanced": true,
+          "field": {
+            "label": "Category"
+          }
+        }
+      },
+      "url": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": true,
+          "isAdvanced": true,
+          "field": {
+            "label": "URL"
+          }
+        }
+      },
+      "price": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": true,
+          "field": {
+            "label": "Price"
+          }
+        }
+      },
+      "priceCurrency": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": true,
+          "field": {
+            "label": "Currency",
+            "help": "ISO 4217 Currency code. Example: USD",
+            "classes": "sq-col-4"
+          }
+        }
+      },
+      "availability": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": true,
+          "field": {
+            "type": "select",
+            "label": "Availability",
+            "help": "Offer availability",
+            "classes": "sq-col-4",
+            "options": {
+              "": "None",
+              "InStock": "In Stock",
+              "SoldOut": "Sold Out",
+              "PreOrder": "Preorder"
+            },
+            "default": "InStock"
+          }
+        }
+      },
+      "validFrom": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": true,
+          "isAdvanced": true,
+          "field": {
+            "type": "datepicker",
+            "label": "Price Valid From",
+            "help": "The date after which the price will no longer be available"
+          }
+        }
+      },
+      "priceValidUntil": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": true,
+          "isAdvanced": true,
+          "field": {
+            "type": "datepicker",
+            "label": "Price Valid Until",
+            "help": "The date after which the price will no longer be available"
+          }
+        }
+      }
+    },
+    "image": {
+      "item": {
+        "isGroup": true,
+        "isRequired": false,
+        "isRecommended": true,
+        "isAdvanced": true
+
+      },
+      "type": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": false,
+          "value": "ImageObject"
+        }
+      },
+      "url": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": false,
+          "field": {
+            "label": "Image URL",
+            "placeholder": "{{image}}"
+          }
+        }
+      },
+      "width": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "isAdvanced": true,
+          "field": {
+            "type": "number",
+            "label": "Image Width"
+          }
+        }
+      },
+      "height": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "isAdvanced": true,
+          "field": {
+            "type": "number",
+            "label": "Image Height"
+          }
+        }
+      }
+    }
+  },
+  "Accommodation": {
+    "item": {
+      "isGroup": true,
+      "isRequired": false,
+      "isRecommended": false
+    },
+    "name": {
+      "item": {
+        "isGroup": false,
+        "isRequired": true,
+        "isRecommended": false,
+        "isPattern": true,
+        "field": {
+          "label": "Headline",
+          "placeholder": "{{title}}"
+        }
+      }
+    },
+    "description": {
+      "item": {
+        "isGroup": false,
+        "isRequired": false,
+        "isRecommended": true,
+        "isPattern": true,
+        "field": {
+          "type": "textarea",
+          "label": "Description",
+          "placeholder": "{{excerpt}}"
+        }
+      }
+    },
+    "numberOfBedrooms": {
+      "item": {
+        "isGroup": false,
+        "isRequired": false,
+        "isRecommended": false,
+        "field": {
+          "type": "number",
+          "label": "No. of bedrooms",
+          "help": "The total integer number of bedrooms.",
+          "classes": "sq-col-4"
+        }
+      }
+    },
+    "petsAllowed": {
+      "item": {
+        "isGroup": false,
+        "isRequired": false,
+        "isRecommended": false,
+        "field": {
+          "type": "select",
+          "label": "Pets allowed",
+          "help": "Indicates whether pets are allowed to enter.",
+          "classes": "sq-col-4",
+          "options": {
+            "false": "No",
+            "true": "Yes"
+          },
+          "default": "No"
+        }
+      }
+    },
+    "geo": {
+      "item": {
+        "isGroup": true,
+        "isRequired": false,
+        "isRecommended": false
+      },
+      "type": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": false,
+          "value": "GeoCoordinates"
+        }
+      },
+      "latitude": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "field": {
+            "label": "Latitude"
+          }
+        }
+      },
+      "longitude": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "field": {
+            "label": "Longitude"
+          }
+        }
+      }
+    },
+    "address": {
+      "item": {
+        "isGroup": true,
+        "isRequired": false,
+        "isRecommended": false
+      },
+      "type": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": false,
+          "value": "PostalAddress"
+        }
+      },
+      "streetAddress": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "field": {
+            "type": "text",
+            "label": "Street Address"
+          }
+        }
+      },
+      "addressLocality": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "field": {
+            "type": "text",
+            "label": "Locality"
+          }
+        }
+      },
+      "addressRegion": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "field": {
+            "type": "text",
+            "label": "Region"
+          }
+        }
+      },
+      "postalCode": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "field": {
+            "type": "text",
+            "label": "Postal Code"
+          }
+        }
+      },
+      "addressCountry": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "field": {
+            "type": "text",
+            "label": "Country"
+          }
+        }
+      }
+    },
+    "image": {
+      "item": {
+        "isGroup": true,
+        "isRequired": false,
+        "isRecommended": true,
+        "isAdvanced": true
+
+      },
+      "type": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": false,
+          "value": "ImageObject"
+        }
+      },
+      "url": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": false,
+          "field": {
+            "label": "Image URL",
+            "placeholder": "{{image}}"
+          }
+        }
+      },
+      "width": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "isAdvanced": true,
+          "field": {
+            "type": "number",
+            "label": "Image Width"
+          }
+        }
+      },
+      "height": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "isAdvanced": true,
+          "field": {
+            "type": "number",
+            "label": "Image Height"
+          }
+        }
+      }
+    }
+  },
+  "Recipe": {
+    "item": {
+      "isGroup": true,
+      "isRequired": false,
+      "isRecommended": false
+    },
+    "name": {
+      "item": {
+        "isGroup": false,
+        "isRequired": true,
+        "isRecommended": false,
+        "isPattern": true,
+        "field": {
+          "label": "Headline",
+          "placeholder": "{{title}}"
+        }
+      }
+    },
+    "datePublished": {
+      "item": {
+        "isGroup": false,
+        "isRequired": true,
+        "isRecommended": true,
+        "isAdvanced": true,
+        "field": {
+          "label": "Published Date",
+          "default": "{{date}}"
+        }
+      }
+    },
+    "author": {
+      "item": {
+        "isGroup": true,
+        "isRequired": false,
+        "isRecommended": false,
+        "isAdvanced": true
+
+      },
+      "type": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": false,
+          "value": "Person"
+        }
+      },
+      "name": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": false,
+          "field": {
+            "label": "Author Name",
+            "placeholder": "{{name}}"
+          }
+        }
+      }
+    },
+    "description": {
+      "item": {
+        "isGroup": false,
+        "isRequired": false,
+        "isRecommended": true,
+        "isPattern": true,
+        "field": {
+          "type": "textarea",
+          "label": "Description",
+          "placeholder": "{{excerpt}}"
+        }
+      }
+    },
+    "prepTime": {
+      "item": {
+        "isGroup": false,
+        "isRequired": false,
+        "isRecommended": false,
+        "field": {
+          "label": "Preparation Time",
+          "help": "ISO 8601 duration format. Example: PT1H30M",
+          "classes": "sq-col-4"
+        }
+      }
+    },
+    "cookTime": {
+      "item": {
+        "isGroup": false,
+        "isRequired": false,
+        "isRecommended": false,
+        "field": {
+          "label": "Cooking Time",
+          "help": "ISO 8601 duration format. Example: PT1H30M",
+          "classes": "sq-col-4"
+        }
+      }
+    },
+    "totalTime": {
+      "item": {
+        "isGroup": false,
+        "isRequired": false,
+        "isRecommended": false,
+        "field": {
+          "label": "Total Time",
+          "help": "ISO 8601 duration format. Example: PT1H30M",
+          "classes": "sq-col-4"
+        }
+      }
+    },
+    "recipeCategory": {
+      "item": {
+        "isGroup": false,
+        "isRequired": false,
+        "isRecommended": false,
+        "field": {
+          "label": "Type",
+          "help": "Type of dish, for example appetizer, or dessert.",
+          "classes": "sq-col-4"
+        }
+      }
+    },
+    "recipeCuisine": {
+      "item": {
+        "isGroup": false,
+        "isRequired": false,
+        "isRecommended": false,
+        "field": {
+          "label": "Cuisine",
+          "help": "The cuisine of the recipe (for example, French or Ethiopian).",
+          "classes": "sq-col-4"
+        }
+      }
+    },
+    "keywords": {
+      "item": {
+        "isGroup": false,
+        "isRequired": false,
+        "isRecommended": false,
+        "isPattern": true,
+        "field": {
+          "label": "Keywords",
+          "help": "Other terms for your recipe such as the season, the holiday, or other descriptors. Separate multiple entries with commas.",
+          "classes": "sq-col-4",
+          "placeholder": "{{keyword}}"
+        }
+      }
+    },
+    "recipeYield": {
+      "item": {
+        "isGroup": false,
+        "isRequired": false,
+        "isRecommended": false,
+        "field": {
+          "label": "Recipe Yield",
+          "help": "Quantity produced by the recipe, for example \"4 servings\". For Guided Recipes, the type must be Integer",
+          "classes": "sq-col-4"
+        }
+      }
+    },
+    "nutrition": {
+      "item": {
+        "isGroup": true,
+        "isRequired": false,
+        "isRecommended": false,
+        "isAdvanced": true
+      },
+      "type": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": false,
+          "value": "NutritionInformation"
+        }
+      },
+      "calories": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "field": {
+            "label": "Calories",
+            "help": "The number of calories in the recipe. Optional."
+          }
+        }
+      }
+    },
+    "recipeIngredient": [
+      {
+        "item": {
+          "isGroup": true,
+          "isRequired": false,
+          "isRecommended": false,
+          "field": {
+            "label": "Recipe Ingredients",
+            "help": "Recipe ingredients, add one ingredient per line."
+          }
+        }
+      }
+    ],
+    "video": {
+      "item": {
+        "isGroup": true,
+        "isRequired": false,
+        "isRecommended": false
+      },
+      "type": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": false,
+          "value": "VideoObject"
+        }
+      },
+      "name": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "field": {
+            "label": "Name",
+            "help": "A recipe video Name",
+            "classes": "sq-col-6"
+          }
+        }
+      },
+      "description": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "field": {
+            "type": "textarea",
+            "label": "Description",
+            "help": "A recipe video Description"
+          }
+        }
+      },
+      "contentUrl": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "field": {
+            "label": "Content URL",
+            "help": "A URL pointing to the actual video media file",
+            "classes": "sq-col-6"
+          }
+        }
+      },
+      "embedUrl": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "field": {
+            "label": "Video URL",
+            "help": "A video URL. Optional.",
+            "classes": "sq-col-6"
+          }
+        }
+      },
+
+      "thumbnailUrl": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "field": {
+            "label": "Recipe Video Thumbnail",
+            "help": "A recipe video thumbnail URL",
+            "classes": "sq-col-6"
+          }
+        }
+      },
+      "uploadDate": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "field": {
+            "type": "datepicker",
+            "label": "Video Upload Date",
+            "classes": "sq-col-6"
+          }
+        }
+      }
+    },
+    "recipeInstructions": {
+      "item": {
+        "isGroup": false,
+        "isRequired": false,
+        "isRecommended": false,
+        "field": {
+          "type": "select",
+          "label": "Instruction Type",
+          "options": {
+            "SingleField": "Single Field",
+            "HowToStep": "Howto Steps"
+          },
+          "default": "SingleField"
+        }
+      }
+    },
+    "instructionsSingleField": {
+      "item": {
+        "isGroup": false,
+        "isRequired": false,
+        "isRecommended": true,
+        "field": {
+          "type": "textarea",
+          "label": "Recipe Instructions"
+        },
+        "dependency": [
+          {
+            "field": "recipeInstructions",
+            "value": "SingleField"
+          }
+        ]
+      }
+    },
+    "instructionsHowToStep": [{
+      "item": {
+        "isGroup": true,
+        "isRequired": false,
+        "isRecommended": false,
+        "dependency": [
+          {
+            "field": "recipeInstructions",
+            "value": "HowToStep"
+          }
+        ]
+      },
+      "type": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": false,
+          "value": "HowToStep"
+        }
+      },
+      "name": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "field": {
+            "label": "How To Step Name"
+          }
+        }
+      },
+      "url": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "field": {
+            "label": "URL",
+            "help": "How To Step Detail URL"
+          }
+        }
+      },
+      "image": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "field": {
+            "label": "Image",
+            "help": "How To Step Image"
+          }
+        }
+      },
+      "text": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "field": {
+            "type": "textarea",
+            "label": "Text"
+          }
+        }
+      }
+    }],
+    "image": {
+      "item": {
+        "isGroup": true,
+        "isRequired": false,
+        "isRecommended": false,
+        "isAdvanced": true
+
+      },
+      "type": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": false,
+          "value": "ImageObject"
+        }
+      },
+      "url": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": false,
+          "field": {
+            "label": "Image URL",
+            "placeholder": "{{image}}"
+          }
+        }
+      }
+    },
+    "review": [{
+      "item": {
+        "isGroup": true,
+        "isRequired": false,
+        "isRecommended": false
+      },
+      "type": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": false,
+          "value": "Review"
+        }
+      },
+      "datePublished": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "isAdvanced": true,
+          "field": {
+            "type": "datetimepicker",
+            "label": "Published Date",
+            "placeholder": "{{date}}"
+          }
+        }
+      },
+      "dateModified": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "isAdvanced": true,
+          "field": {
+            "type": "datetimepicker",
+            "label": "Modified Date",
+            "placeholder": "{{modified}}"
+          }
+        }
+      },
+      "author": {
+        "item": {
+          "isGroup": true,
+          "isRequired": false,
+          "isRecommended": false,
+          "isAdvanced": true
+        },
+        "type": {
+          "item": {
+            "isGroup": false,
+            "isRequired": true,
+            "isRecommended": false,
+            "value": "Person"
+          }
+        },
+        "name": {
+          "item": {
+            "isGroup": false,
+            "isRequired": true,
+            "isRecommended": false,
+            "field": {
+              "label": "Author Name",
+              "placeholder": "{{name}}"
+            }
+          }
+        }
+      },
+      "reviewRating": {
+        "item": {
+          "isGroup": true,
+          "isRequired": false,
+          "isRecommended": false,
+          "isAdvanced": true
+        },
+        "type": {
+          "item": {
+            "isGroup": false,
+            "isRequired": true,
+            "isRecommended": false,
+            "value": "Rating"
+          }
+        },
+        "ratingValue": {
+          "item": {
+            "isGroup": false,
+            "isRequired": false,
+            "isRecommended": false,
+            "field": {
+              "type": "number",
+              "label": "Rating",
+              "help": "Rating score"
+            }
+          }
+        },
+        "worstRating": {
+          "item": {
+            "isGroup": false,
+            "isRequired": false,
+            "isRecommended": false,
+            "field": {
+              "type": "number",
+              "label": "Rating Minimum",
+              "help": "Rating minimum score",
+              "placeholder": 1
+            }
+          }
+        },
+        "bestRating": {
+          "item": {
+            "isGroup": false,
+            "isRequired": false,
+            "isRecommended": false,
+            "field": {
+              "type": "number",
+              "label": "Rating Maximum",
+              "help": "Rating maximum score",
+              "placeholder": 5
+            }
+          }
+        }
+      }
+    }]
+  },
+  "Restaurant": {
+    "item": {
+      "isGroup": true,
+      "isRequired": false,
+      "isRecommended": false
+    },
+    "name": {
+      "item": {
+        "isGroup": false,
+        "isRequired": true,
+        "isRecommended": false,
+        "isPattern": true,
+        "field": {
+          "label": "Headline",
+          "placeholder": "{{title}}"
+        }
+      }
+    },
+    "description": {
+      "item": {
+        "isGroup": false,
+        "isRequired": false,
+        "isRecommended": true,
+        "isPattern": true,
+        "field": {
+          "type": "textarea",
+          "label": "Description",
+          "placeholder": "{{excerpt}}"
+        }
+      }
+    },
+    "telephone": {
+      "item": {
+        "isGroup": false,
+        "isRequired": false,
+        "isRecommended": false,
+        "field": {
+          "label": "Phone Number",
+          "classes": "sq-col-4"
+        }
+      }
+    },
+    "priceRange": {
+      "item": {
+        "isGroup": false,
+        "isRequired": false,
+        "isRecommended": false,
+        "field": {
+          "type": "select",
+          "label": "Price Range",
+          "classes": "sq-col-4",
+          "options": {
+            "$": "$",
+            "$$": "$$",
+            "$$$": "$$$"
+          }
+        }
+      }
+    },
+    "address": {
+      "item": {
+        "isGroup": true,
+        "isRequired": false,
+        "isRecommended": false
+      },
+      "type": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": false,
+          "value": "PostalAddress"
+        }
+      },
+      "streetAddress": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "field": {
+            "type": "text",
+            "label": "Street Address"
+          }
+        }
+      },
+      "addressLocality": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "field": {
+            "type": "text",
+            "label": "Locality"
+          }
+        }
+      },
+      "addressRegion": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "field": {
+            "type": "text",
+            "label": "Region"
+          }
+        }
+      },
+      "postalCode": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "field": {
+            "type": "text",
+            "label": "Postal Code"
+          }
+        }
+      },
+      "addressCountry": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "field": {
+            "type": "text",
+            "label": "Country"
+          }
+        }
+      }
+    },
+    "geo": {
+      "item": {
+        "isGroup": true,
+        "isRequired": false,
+        "isRecommended": false
+      },
+      "type": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": false,
+          "value": "GeoCoordinates"
+        }
+      },
+      "latitude": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "field": {
+            "label": "Latitude"
+          }
+        }
+      },
+      "longitude": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "field": {
+            "label": "Longitude"
+          }
+        }
+      }
+    },
+    "openingHoursSpecification": [
+      {
+        "item": {
+          "isGroup": true,
+          "isRequired": false,
+          "isRecommended": false
+        },
+        "type": {
+          "item": {
+            "isGroup": false,
+            "isRequired": true,
+            "isRecommended": false,
+            "value": "OpeningHoursSpecification"
+          }
+        },
+        "dayOfWeek": {
+          "item": {
+            "isGroup": false,
+            "isRequired": false,
+            "isRecommended": false,
+            "field": {
+              "type": "select",
+              "multiple": true,
+              "label": "Open Days",
+              "options": {
+                "Monday": "Monday",
+                "Tuesday": "Tuesday",
+                "Wednesday": "Wednesday",
+                "Thursday": "Thursday",
+                "Friday": "Friday",
+                "Saturday": "Saturday",
+                "Sunday": "Sunday"
+              }
+            }
+          }
+        },
+        "opens": {
+          "item": {
+            "isGroup": false,
+            "isRequired": false,
+            "isRecommended": false,
+            "field": {
+              "type": "timepicker",
+              "label": "Opening Time",
+              "classes": "sq-col-6",
+              "placeholder": "09:00 AM"
+            }
+          }
+        },
+        "closes": {
+          "item": {
+            "isGroup": false,
+            "isRequired": false,
+            "isRecommended": false,
+            "field": {
+              "type": "timepicker",
+              "label": "Closing Time",
+              "classes": "sq-col-6",
+              "placeholder": "05:00 PM"
+            }
+          }
+        }
+      }
+    ],
+    "servesCuisine": {
+      "item": {
+        "isGroup": false,
+        "isRequired": false,
+        "isRecommended": false,
+        "field": {
+          "label": "Cuisine",
+          "help": "The type of cuisine the restaurant serves. Separate multiple entries with commas.",
+          "classes": "sq-col-6"
+        }
+      }
+    },
+    "menu": {
+      "item": {
+        "isGroup": false,
+        "isRequired": false,
+        "isRecommended": false,
+        "field": {
+          "label": "Menu URL",
+          "help": "URL pointing to the menu of the restaurant.",
+          "classes": "sq-col-6"
+        }
+      }
+    },
+    "image": {
+      "item": {
+        "isGroup": true,
+        "isRequired": false,
+        "isRecommended": false,
+        "isAdvanced": true
+
+      },
+      "type": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": false,
+          "value": "ImageObject"
+        }
+      },
+      "url": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": false,
+          "field": {
+            "label": "Image URL",
+            "placeholder": "{{image}}"
+          }
+        }
+      },
+      "width": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "isAdvanced": true,
+          "field": {
+            "type": "number",
+            "label": "Image Width"
+          }
+        }
+      },
+      "height": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "isAdvanced": true,
+          "field": {
+            "type": "number",
+            "label": "Image Height"
+          }
+        }
+      }
+    }
+  },
+  "Store": {
+    "item": {
+      "isGroup": true,
+      "isRequired": false,
+      "isRecommended": false
+    },
+    "name": {
+      "item": {
+        "isGroup": false,
+        "isRequired": true,
+        "isRecommended": false,
+        "isPattern": true,
+        "field": {
+          "label": "Headline",
+          "placeholder": "{{title}}"
+        }
+      }
+    },
+    "description": {
+      "item": {
+        "isGroup": false,
+        "isRequired": false,
+        "isRecommended": true,
+        "isPattern": true,
+        "field": {
+          "type": "textarea",
+          "label": "Description",
+          "placeholder": "{{excerpt}}"
+        }
+      }
+    },
+    "telephone": {
+      "item": {
+        "isGroup": false,
+        "isRequired": false,
+        "isRecommended": false,
+        "field": {
+          "label": "Phone Number",
+          "classes": "sq-col-4"
+        }
+      }
+    },
+    "priceRange": {
+      "item": {
+        "isGroup": false,
+        "isRequired": false,
+        "isRecommended": false,
+        "field": {
+          "type": "select",
+          "label": "Price Range",
+          "classes": "sq-col-4",
+          "options": {
+            "$": "$",
+            "$$": "$$",
+            "$$$": "$$$"
+          }
+        }
+      }
+    },
+    "address": {
+      "item": {
+        "isGroup": true,
+        "isRequired": false,
+        "isRecommended": false
+      },
+      "type": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": false,
+          "value": "PostalAddress"
+        }
+      },
+      "streetAddress": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "field": {
+            "type": "text",
+            "label": "Street Address"
+          }
+        }
+      },
+      "addressLocality": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "field": {
+            "type": "text",
+            "label": "Locality"
+          }
+        }
+      },
+      "addressRegion": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "field": {
+            "type": "text",
+            "label": "Region"
+          }
+        }
+      },
+      "postalCode": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "field": {
+            "type": "text",
+            "label": "Postal Code"
+          }
+        }
+      },
+      "addressCountry": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "field": {
+            "type": "text",
+            "label": "Country"
+          }
+        }
+      }
+    },
+    "geo": {
+      "item": {
+        "isGroup": true,
+        "isRequired": false,
+        "isRecommended": false
+      },
+      "type": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": false,
+          "value": "GeoCoordinates"
+        }
+      },
+      "latitude": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "field": {
+            "label": "Latitude"
+          }
+        }
+      },
+      "longitude": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "field": {
+            "label": "Longitude"
+          }
+        }
+      }
+    },
+    "openingHoursSpecification": [{
+      "item": {
+        "isGroup": true,
+        "isRequired": false,
+        "isRecommended": false
+      },
+      "type": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": false,
+          "value": "OpeningHoursSpecification"
+        }
+      },
+      "dayOfWeek": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "field": {
+            "type": "select",
+            "multiple": true,
+            "label": "Open Days",
+            "options": {
+              "Monday": "Monday",
+              "Tuesday": "Tuesday",
+              "Wednesday": "Wednesday",
+              "Thursday": "Thursday",
+              "Friday": "Friday",
+              "Saturday": "Saturday",
+              "Sunday": "Sunday"
+            }
+          }
+        }
+      },
+      "opens": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "field": {
+            "type": "timepicker",
+            "label": "Opening Time",
+            "classes": "sq-col-6",
+            "placeholder": "09:00"
+          }
+        }
+      },
+      "closes": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "field": {
+            "type": "timepicker",
+            "label": "Closing Time",
+            "classes": "sq-col-6",
+            "placeholder": "17:00"
+          }
+        }
+      }
+    }],
+    "image": {
+      "item": {
+        "isGroup": true,
+        "isRequired": false,
+        "isRecommended": false,
+        "isAdvanced": true
+
+      },
+      "type": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": false,
+          "value": "ImageObject"
+        }
+      },
+      "url": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": false,
+          "field": {
+            "label": "Image URL",
+            "placeholder": "{{image}}"
+          }
+        }
+      },
+      "width": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "isAdvanced": true,
+          "field": {
+            "type": "number",
+            "label": "Image Width"
+          }
+        }
+      },
+      "height": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "isAdvanced": true,
+          "field": {
+            "type": "number",
+            "label": "Image Height"
+          }
+        }
+      }
+    }
+  },
+  "Service": {
+    "item": {
+      "isGroup": true,
+      "isRequired": false,
+      "isRecommended": false
+    },
+    "name": {
+      "item": {
+        "isGroup": false,
+        "isRequired": true,
+        "isRecommended": false,
+        "isPattern": true,
+        "field": {
+          "label": "Headline",
+          "placeholder": "{{title}}"
+        }
+      }
+    },
+    "description": {
+      "item": {
+        "isGroup": false,
+        "isRequired": false,
+        "isRecommended": true,
+        "isPattern": true,
+        "field": {
+          "type": "textarea",
+          "label": "Description",
+          "placeholder": "{{excerpt}}"
+        }
+      }
+    },
+    "serviceType": {
+      "item": {
+        "isGroup": false,
+        "isRequired": false,
+        "isRecommended": false,
+        "field": {
+          "label": "Service Type",
+          "help": "The type of service being offered, e.g. veterans' benefits, emergency relief, etc.",
+          "classes": "sq-col-4"
+        }
+      }
+    },
+    "offers": {
+      "item": {
+        "isGroup": true,
+        "isRequired": false,
+        "isRecommended": false
+      },
+      "type": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": false,
+          "value": "Offer"
+        }
+      },
+      "name": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": true,
+          "isAdvanced": true,
+          "field": {
+            "label": "Name"
+          }
+        }
+      },
+      "category": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": true,
+          "isAdvanced": true,
+          "field": {
+            "label": "Category"
+          }
+        }
+      },
+      "url": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": true,
+          "isAdvanced": true,
+          "field": {
+            "label": "URL"
+          }
+        }
+      },
+      "price": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": true,
+          "field": {
+            "label": "Price"
+          }
+        }
+      },
+      "priceCurrency": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": true,
+          "field": {
+            "label": "Currency",
+            "help": "ISO 4217 Currency code. Example: USD",
+            "classes": "sq-col-4"
+          }
+        }
+      },
+      "availability": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": true,
+          "field": {
+            "type": "select",
+            "label": "Availability",
+            "help": "Offer availability",
+            "classes": "sq-col-4",
+            "options": {
+              "": "None",
+              "InStock": "In Stock",
+              "SoldOut": "Sold Out",
+              "PreOrder": "Preorder"
+            },
+            "default": "InStock"
+          }
+        }
+      },
+      "validFrom": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": true,
+          "isAdvanced": true,
+          "field": {
+            "type": "datepicker",
+            "label": "Price Valid From",
+            "help": "The date after which the price will no longer be available"
+          }
+        }
+      },
+      "priceValidUntil": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": true,
+          "isAdvanced": true,
+          "field": {
+            "type": "datepicker",
+            "label": "Price Valid Until",
+            "help": "The date after which the price will no longer be available"
+          }
+        }
+      }
+    },
+    "image": {
+      "item": {
+        "isGroup": true,
+        "isRequired": false,
+        "isRecommended": true,
+        "isAdvanced": true
+
+      },
+      "type": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": false,
+          "value": "ImageObject"
+        }
+      },
+      "url": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": false,
+          "field": {
+            "label": "Image URL",
+            "placeholder": "{{image}}"
+          }
+        }
+      },
+      "width": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "isAdvanced": true,
+          "field": {
+            "type": "number",
+            "label": "Image Width"
+          }
+        }
+      },
+      "height": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "isAdvanced": true,
+          "field": {
+            "type": "number",
+            "label": "Image Height"
+          }
+        }
+      }
+    }
+  },
+  "SoftwareApplication": {
+    "item": {
+      "isGroup": true,
+      "isRequired": false,
+      "isRecommended": false
+    },
+    "name": {
+      "item": {
+        "isGroup": false,
+        "isRequired": true,
+        "isRecommended": false,
+        "isPattern": true,
+        "field": {
+          "label": "Headline",
+          "placeholder": "{{title}}"
+        }
+      }
+    },
+    "description": {
+      "item": {
+        "isGroup": false,
+        "isRequired": false,
+        "isRecommended": true,
+        "isPattern": true,
+        "field": {
+          "type": "textarea",
+          "label": "Description",
+          "placeholder": "{{excerpt}}"
+        }
+      }
+    },
+    "operatingSystem": {
+      "item": {
+        "isGroup": false,
+        "isRequired": false,
+        "isRecommended": false,
+        "field": {
+          "label": "Operating System",
+          "help": "For example, \"Windows 7\", \"OSX 10.6\", \"Android 1.6\"",
+          "classes": "sq-col-6"
+        }
+      }
+    },
+    "applicationCategory": {
+      "item": {
+        "isGroup": false,
+        "isRequired": false,
+        "isRecommended": false,
+        "field": {
+          "label": "Application Category",
+          "help": "For example, \"Game\", \"Multimedia\"",
+          "classes": "sq-col-6"
+        }
+      }
+    },
+    "offers": {
+      "item": {
+        "isGroup": true,
+        "isRequired": false,
+        "isRecommended": false
+      },
+      "type": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": false,
+          "value": "Offer"
+        }
+      },
+      "name": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": true,
+          "isAdvanced": true,
+          "field": {
+            "label": "Name"
+          }
+        }
+      },
+      "category": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": true,
+          "isAdvanced": true,
+          "field": {
+            "label": "Category"
+          }
+        }
+      },
+      "url": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": true,
+          "isAdvanced": true,
+          "field": {
+            "label": "URL"
+          }
+        }
+      },
+      "price": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": true,
+          "field": {
+            "label": "Price"
+          }
+        }
+      },
+      "priceCurrency": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": true,
+          "field": {
+            "label": "Currency",
+            "help": "ISO 4217 Currency code. Example: USD",
+            "classes": "sq-col-4"
+          }
+        }
+      },
+      "availability": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": true,
+          "field": {
+            "type": "select",
+            "label": "Availability",
+            "help": "Offer availability",
+            "classes": "sq-col-4",
+            "options": {
+              "": "None",
+              "InStock": "In Stock",
+              "SoldOut": "Sold Out",
+              "PreOrder": "Preorder"
+            },
+            "default": "InStock"
+          }
+        }
+      },
+      "validFrom": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": true,
+          "isAdvanced": true,
+          "field": {
+            "type": "datepicker",
+            "label": "Price Valid From",
+            "help": "The date after which the price will no longer be available"
+          }
+        }
+      },
+      "priceValidUntil": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": true,
+          "isAdvanced": true,
+          "field": {
+            "type": "datepicker",
+            "label": "Price Valid Until",
+            "help": "The date after which the price will no longer be available"
+          }
+        }
+      }
+    },
+    "review": [{
+      "item": {
+        "isGroup": true,
+        "isRequired": false,
+        "isRecommended": false
+      },
+      "type": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": false,
+          "value": "Review"
+        }
+      },
+      "datePublished": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "isAdvanced": true,
+          "field": {
+            "type": "datetimepicker",
+            "label": "Published Date",
+            "placeholder": "{{date}}"
+          }
+        }
+      },
+      "dateModified": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "isAdvanced": true,
+          "field": {
+            "type": "datetimepicker",
+            "label": "Modified Date",
+            "placeholder": "{{modified}}"
+          }
+        }
+      },
+      "author": {
+        "item": {
+          "isGroup": true,
+          "isRequired": false,
+          "isRecommended": false,
+          "isAdvanced": true
+        },
+        "type": {
+          "item": {
+            "isGroup": false,
+            "isRequired": true,
+            "isRecommended": false,
+            "value": "Person"
+          }
+        },
+        "name": {
+          "item": {
+            "isGroup": false,
+            "isRequired": true,
+            "isRecommended": false,
+            "field": {
+              "label": "Author Name",
+              "placeholder": "{{name}}"
+            }
+          }
+        }
+      },
+      "reviewRating": {
+        "item": {
+          "isGroup": true,
+          "isRequired": false,
+          "isRecommended": false,
+          "isAdvanced": true
+        },
+        "type": {
+          "item": {
+            "isGroup": false,
+            "isRequired": true,
+            "isRecommended": false,
+            "value": "Rating"
+          }
+        },
+        "ratingValue": {
+          "item": {
+            "isGroup": false,
+            "isRequired": false,
+            "isRecommended": false,
+            "field": {
+              "type": "number",
+              "label": "Rating",
+              "help": "Rating score"
+            }
+          }
+        },
+        "worstRating": {
+          "item": {
+            "isGroup": false,
+            "isRequired": false,
+            "isRecommended": false,
+            "field": {
+              "type": "number",
+              "label": "Rating Minimum",
+              "help": "Rating minimum score",
+              "placeholder": 1
+            }
+          }
+        },
+        "bestRating": {
+          "item": {
+            "isGroup": false,
+            "isRequired": false,
+            "isRecommended": false,
+            "field": {
+              "type": "number",
+              "label": "Rating Maximum",
+              "help": "Rating maximum score",
+              "placeholder": 5
+            }
+          }
+        }
+      }
+    }],
+    "image": {
+      "item": {
+        "isGroup": true,
+        "isRequired": false,
+        "isRecommended": false,
+        "isAdvanced": true
+
+      },
+      "type": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": false,
+          "value": "ImageObject"
+        }
+      },
+      "url": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": false,
+          "field": {
+            "label": "Image URL",
+            "placeholder": "{{image}}"
+          }
+        }
+      },
+      "width": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "isAdvanced": true,
+          "field": {
+            "type": "number",
+            "label": "Image Width"
+          }
+        }
+      },
+      "height": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "isAdvanced": true,
+          "field": {
+            "type": "number",
+            "label": "Image Height"
+          }
+        }
+      }
+    }
+  },
+  "VideoGame": {
+    "item": {
+      "isGroup": true,
+      "isRequired": false,
+      "isRecommended": false
+    },
+    "name": {
+      "item": {
+        "isGroup": false,
+        "isRequired": true,
+        "isRecommended": false,
+        "isPattern": true,
+        "field": {
+          "label": "Headline",
+          "placeholder": "{{title}}"
+        }
+      }
+    },
+    "description": {
+      "item": {
+        "isGroup": false,
+        "isRequired": false,
+        "isRecommended": true,
+        "isPattern": true,
+        "field": {
+          "type": "textarea",
+          "label": "Description",
+          "placeholder": "{{excerpt}}"
+        }
+      }
+    },
+    "operatingSystem": {
+      "item": {
+        "isGroup": false,
+        "isRequired": false,
+        "isRecommended": false,
+        "field": {
+          "label": "Operating System",
+          "help": "For example, \"Windows 7\", \"OSX 10.6\", \"Android 1.6\"",
+          "classes": "sq-col-6"
+        }
+      }
+    },
+    "applicationCategory": {
+      "item": {
+        "isGroup": false,
+        "isRequired": false,
+        "isRecommended": false,
+        "field": {
+          "label": "Application Category",
+          "help": "For example, \"Game\", \"Multimedia\"",
+          "classes": "sq-col-6"
+        }
+      }
+    },
+    "processorRequirements": {
+      "item": {
+        "isGroup": false,
+        "isRequired": false,
+        "isRecommended": false,
+        "field": {
+          "label": "Processor",
+          "help": "Processor architecture required to run the application (e.g. IA64).",
+          "classes": "sq-col-6"
+        }
+      }
+    },
+    "memoryRequirements": {
+      "item": {
+        "isGroup": false,
+        "isRequired": false,
+        "isRecommended": false,
+        "field": {
+          "label": "Memory",
+          "help": "Minimum memory requirements.",
+          "classes": "sq-col-6"
+        }
+      }
+    },
+    "storageRequirements": {
+      "item": {
+        "isGroup": false,
+        "isRequired": false,
+        "isRecommended": false,
+        "field": {
+          "label": "Storage",
+          "help": "Storage requirements (free space required).",
+          "classes": "sq-col-6"
+        }
+      }
+    },
+    "gamePlatform": {
+      "item": {
+        "isGroup": false,
+        "isRequired": false,
+        "isRecommended": false,
+        "field": {
+          "label": "Platforms",
+          "help": "The electronic systems used to play video games. (e.g. iOS, PlayStation 3)",
+          "classes": "sq-col-6"
+        }
+      }
+    },
+    "contentRating": {
+      "item": {
+        "isGroup": false,
+        "isRequired": false,
+        "isRecommended": false,
+        "field": {
+          "label": "Official rating",
+          "help": "Official rating of a piece of content. (e.g. MPAA PG-13)",
+          "classes": "sq-col-6"
+        }
+      }
+    },
+    "softwareVersion": {
+      "item": {
+        "isGroup": false,
+        "isRequired": false,
+        "isRecommended": false,
+        "field": {
+          "label": "Version",
+          "help": "Version of the software instance.",
+          "classes": "sq-col-4"
+        }
+      }
+    },
+    "playMode": {
+      "item": {
+        "isGroup": false,
+        "isRequired": false,
+        "isRecommended": false,
+        "field": {
+          "label": "Play Mode",
+          "help": "Indicates whether this game is multi-player, co-op or single-player. (e.g. SinglePlayer)",
+          "classes": "sq-col-6"
+        }
+      }
+    },
+    "genre": {
+      "item": {
+        "isGroup": false,
+        "isRequired": false,
+        "isRecommended": false,
+        "field": {
+          "label": "Genre",
+          "help": "Genre of the creative work, broadcast channel or group. (e.g. Action Role-playing game)"
+        }
+      }
+    },
+    "cheatCode": {
+      "item": {
+        "isGroup": false,
+        "isRequired": false,
+        "isRecommended": false,
+        "field": {
+          "label": "Cheat Code",
+          "help": "Cheat codes to the game."
+        }
+      }
+    },
+    "inLanguage": {
+      "item": {
+        "isGroup": false,
+        "isRequired": false,
+        "isRecommended": false,
+        "field": {
+          "label": "Languages",
+          "help": "The language of the content or performance or used in an action. (e.g. Chinese)"
+        }
+      }
+    },
+    "offers": {
+      "item": {
+        "isGroup": true,
+        "isRequired": false,
+        "isRecommended": false
+      },
+      "type": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": false,
+          "value": "Offer"
+        }
+      },
+      "name": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": true,
+          "isAdvanced": true,
+          "field": {
+            "label": "Name"
+          }
+        }
+      },
+      "category": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": true,
+          "isAdvanced": true,
+          "field": {
+            "label": "Category"
+          }
+        }
+      },
+      "url": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": true,
+          "isAdvanced": true,
+          "field": {
+            "label": "URL"
+          }
+        }
+      },
+      "price": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": true,
+          "field": {
+            "label": "Price"
+          }
+        }
+      },
+      "priceCurrency": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": true,
+          "field": {
+            "label": "Currency",
+            "help": "ISO 4217 Currency code. Example: USD",
+            "classes": "sq-col-4"
+          }
+        }
+      },
+      "availability": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": true,
+          "field": {
+            "type": "select",
+            "label": "Availability",
+            "help": "Offer availability",
+            "classes": "sq-col-4",
+            "options": {
+              "": "None",
+              "InStock": "In Stock",
+              "SoldOut": "Sold Out",
+              "PreOrder": "Preorder"
+            },
+            "default": "InStock"
+          }
+        }
+      },
+      "validFrom": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": true,
+          "isAdvanced": true,
+          "field": {
+            "type": "datepicker",
+            "label": "Price Valid From",
+            "help": "The date after which the price will no longer be available"
+          }
+        }
+      },
+      "priceValidUntil": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": true,
+          "isAdvanced": true,
+          "field": {
+            "type": "datepicker",
+            "label": "Price Valid Until",
+            "help": "The date after which the price will no longer be available"
+          }
+        }
+      }
+    },
+    "review": [{
+      "item": {
+        "isGroup": true,
+        "isRequired": false,
+        "isRecommended": false
+      },
+      "type": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": false,
+          "value": "Review"
+        }
+      },
+      "datePublished": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "isAdvanced": true,
+          "field": {
+            "type": "datetimepicker",
+            "label": "Published Date",
+            "placeholder": "{{date}}"
+          }
+        }
+      },
+      "dateModified": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "isAdvanced": true,
+          "field": {
+            "type": "datetimepicker",
+            "label": "Modified Date",
+            "placeholder": "{{modified}}"
+          }
+        }
+      },
+      "author": {
+        "item": {
+          "isGroup": true,
+          "isRequired": false,
+          "isRecommended": false,
+          "isAdvanced": true
+        },
+        "type": {
+          "item": {
+            "isGroup": false,
+            "isRequired": true,
+            "isRecommended": false,
+            "value": "Person"
+          }
+        },
+        "name": {
+          "item": {
+            "isGroup": false,
+            "isRequired": true,
+            "isRecommended": false,
+            "field": {
+              "label": "Author Name",
+              "placeholder": "{{name}}"
+            }
+          }
+        }
+      },
+      "reviewRating": {
+        "item": {
+          "isGroup": true,
+          "isRequired": false,
+          "isRecommended": false,
+          "isAdvanced": true
+        },
+        "type": {
+          "item": {
+            "isGroup": false,
+            "isRequired": true,
+            "isRecommended": false,
+            "value": "Rating"
+          }
+        },
+        "ratingValue": {
+          "item": {
+            "isGroup": false,
+            "isRequired": false,
+            "isRecommended": false,
+            "field": {
+              "type": "number",
+              "label": "Rating",
+              "help": "Rating score"
+            }
+          }
+        },
+        "worstRating": {
+          "item": {
+            "isGroup": false,
+            "isRequired": false,
+            "isRecommended": false,
+            "field": {
+              "type": "number",
+              "label": "Rating Minimum",
+              "help": "Rating minimum score",
+              "placeholder": 1
+            }
+          }
+        },
+        "bestRating": {
+          "item": {
+            "isGroup": false,
+            "isRequired": false,
+            "isRecommended": false,
+            "field": {
+              "type": "number",
+              "label": "Rating Maximum",
+              "help": "Rating maximum score",
+              "placeholder": 5
+            }
+          }
+        }
+      }
+    }],
+    "image": {
+      "item": {
+        "isGroup": true,
+        "isRequired": false,
+        "isRecommended": false,
+        "isAdvanced": true
+
+      },
+      "type": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": false,
+          "value": "ImageObject"
+        }
+      },
+      "url": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": false,
+          "field": {
+            "label": "Image URL",
+            "placeholder": "{{image}}"
+          }
+        }
+      },
+      "width": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "isAdvanced": true,
+          "field": {
+            "type": "number",
+            "label": "Image Width"
+          }
+        }
+      },
+      "height": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "isAdvanced": true,
+          "field": {
+            "type": "number",
+            "label": "Image Height"
+          }
+        }
+      }
+    }
+  },
+  "Video": {
+    "item": {
+      "isGroup": true,
+      "isRequired": false,
+      "isRecommended": false
+    },
+    "name": {
+      "item": {
+        "isGroup": false,
+        "isRequired": true,
+        "isRecommended": false,
+        "isPattern": true,
+        "field": {
+          "label": "Headline",
+          "placeholder": "{{title}}"
+        }
+      }
+    },
+    "description": {
+      "item": {
+        "isGroup": false,
+        "isRequired": false,
+        "isRecommended": true,
+        "isPattern": true,
+        "field": {
+          "type": "textarea",
+          "label": "Description",
+          "placeholder": "{{excerpt}}"
+        }
+      }
+    },
+    "uploadDate": {
+      "item": {
+        "isGroup": false,
+        "isRequired": false,
+        "isRecommended": false,
+        "isAdvanced": true,
+        "field": {
+          "type": "datetimepicker",
+          "label": "Upload Date",
+          "placeholder": "{{date}}"
+        }
+      }
+    },
+    "contentUrl": {
+      "item": {
+        "isGroup": false,
+        "isRequired": true,
+        "isRecommended": false,
+        "field": {
+          "label": "Content URL",
+          "help": "A URL pointing to the actual video media file",
+          "placeholder": "{{video}}"
+        }
+      }
+    },
+    "embedUrl": {
+      "item": {
+        "isGroup": false,
+        "isRequired": false,
+        "isRecommended": false,
+        "field": {
+          "label": "Embed URL",
+          "help": "A URL pointing to the embeddable player for the video",
+          "classes": "sq-col-6"
+        }
+      }
+    },
+    "duration": {
+      "item": {
+        "isGroup": false,
+        "isRequired": false,
+        "isRecommended": false,
+        "field": {
+          "label": "Duration",
+          "help": "ISO 8601 duration format. Example: 1H30M",
+          "classes": "sq-col-6"
+        }
+      }
+    },
+    "interactionCount": {
+      "item": {
+        "isGroup": false,
+        "isRequired": false,
+        "isRecommended": false,
+        "field": {
+          "label": "Views",
+          "help": "Number of views",
+          "classes": "sq-col-6"
+        }
+      }
+    },
+    "thumbnailUrl": {
+      "item": {
+        "isGroup": false,
+        "isRequired": false,
+        "isRecommended": false,
+        "field": {
+          "label": "Video Thumbnail",
+          "help": "A video thumbnail URL",
+          "placeholder": "{{image}}"
+        }
+      }
+    },
+    "hasPart": [{
+      "item": {
+        "isGroup": true,
+        "isRequired": false,
+        "isRecommended": false,
+        "label": "Clip"
+      },
+      "type": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": true,
+          "value": "Clip"
+        }
+      },
+      "name": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": false,
+          "isPattern": true,
+          "field": {
+            "label": "Name",
+            "placeholder": "{{title}}",
+            "help": "A descriptive title for the content of the clip."
+          }
+        }
+      },
+      "startOffset": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": true,
+          "field": {
+            "type": "number",
+            "label": "Start Offset",
+            "classes": "sq-col-4",
+            "help": "The start time of the clip expressed as the number of seconds from the beginning of the work."
+          }
+        }
+      },
+      "endOffset": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": true,
+          "field": {
+            "type": "number",
+            "label": "End Offset",
+            "classes": "sq-col-4",
+            "help": "The end time of the clip expressed as the number of seconds from the beginning of the work."
+          }
+        }
+      },
+      "url": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": true,
+          "field": {
+            "label": "Url",
+            "help": "A URL that points to the start time of the clip."
+          }
+        }
+      }
+
+    }]
+  },
+  "Movie": {
+    "item": {
+      "isGroup": true,
+      "isRequired": false,
+      "isRecommended": false
+    },
+    "name": {
+      "item": {
+        "isGroup": false,
+        "isRequired": true,
+        "isRecommended": false,
+        "isPattern": true,
+        "field": {
+          "label": "Headline",
+          "placeholder": "{{title}}"
+        }
+      }
+    },
+    "description": {
+      "item": {
+        "isGroup": false,
+        "isRequired": false,
+        "isRecommended": true,
+        "isPattern": true,
+        "field": {
+          "type": "textarea",
+          "label": "Description",
+          "placeholder": "{{excerpt}}"
+        }
+      }
+    },
+    "dateCreated": {
+      "item": {
+        "isGroup": false,
+        "isRequired": false,
+        "isRecommended": false,
+        "isAdvanced": true,
+        "field": {
+          "type": "datetimepicker",
+          "label": "Date Created",
+          "placeholder": "{{date}}"
+        }
+      }
+    },
+    "image": {
+      "item": {
+        "isGroup": false,
+        "isRequired": false,
+        "isRecommended": false,
+        "field": {
+          "label": "Movie Image",
+          "help": "An image that represents the movie.",
+          "placeholder": "{{image}}"
+        }
+      }
+    },
+    "director": {
+      "item": {
+        "isGroup": true,
+        "isRequired": false,
+        "isRecommended": false,
+        "isPattern": false,
+        "isAdvanced": true
+      },
+      "type": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": false,
+          "value": "Person"
+        }
+      },
+      "name": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": false,
+          "field": {
+            "label": "Director Name",
+            "placeholder": "{{name}}"
+          }
+        }
+      }
+    },
+    "review": [{
+      "item": {
+        "isGroup": true,
+        "isRequired": false,
+        "isRecommended": false
+      },
+      "type": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": false,
+          "value": "Review"
+        }
+      },
+      "datePublished": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "isAdvanced": true,
+          "field": {
+            "type": "datetimepicker",
+            "label": "Published Date",
+            "placeholder": "{{date}}"
+          }
+        }
+      },
+      "dateModified": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "isAdvanced": true,
+          "field": {
+            "type": "datetimepicker",
+            "label": "Modified Date",
+            "placeholder": "{{modified}}"
+          }
+        }
+      },
+      "author": {
+        "item": {
+          "isGroup": true,
+          "isRequired": false,
+          "isRecommended": false,
+          "isAdvanced": true
+        },
+        "type": {
+          "item": {
+            "isGroup": false,
+            "isRequired": true,
+            "isRecommended": false,
+            "value": "Person"
+          }
+        },
+        "name": {
+          "item": {
+            "isGroup": false,
+            "isRequired": true,
+            "isRecommended": false,
+            "field": {
+              "label": "Author Name",
+              "placeholder": "{{name}}"
+            }
+          }
+        }
+      },
+      "reviewRating": {
+        "item": {
+          "isGroup": true,
+          "isRequired": false,
+          "isRecommended": false,
+          "isAdvanced": true
+        },
+        "type": {
+          "item": {
+            "isGroup": false,
+            "isRequired": true,
+            "isRecommended": false,
+            "value": "Rating"
+          }
+        },
+        "ratingValue": {
+          "item": {
+            "isGroup": false,
+            "isRequired": false,
+            "isRecommended": false,
+            "field": {
+              "type": "number",
+              "label": "Rating",
+              "help": "Rating score"
+            }
+          }
+        },
+        "worstRating": {
+          "item": {
+            "isGroup": false,
+            "isRequired": false,
+            "isRecommended": false,
+            "field": {
+              "type": "number",
+              "label": "Rating Minimum",
+              "help": "Rating minimum score",
+              "placeholder": 1
+            }
+          }
+        },
+        "bestRating": {
+          "item": {
+            "isGroup": false,
+            "isRequired": false,
+            "isRecommended": false,
+            "field": {
+              "type": "number",
+              "label": "Rating Maximum",
+              "help": "Rating maximum score",
+              "placeholder": 5
+            }
+          }
+        }
+      }
+    }]
+  },
+  "FactCheck": {
+    "item": {
+      "isGroup": true,
+      "isRequired": false,
+      "isRecommended": false
+    },
+    "type": {
+      "item": {
+        "isGroup": false,
+        "isRequired": true,
+        "isRecommended": false,
+        "value": "ClaimReview"
+      }
+    },
+    "claimReviewed": {
+      "item": {
+        "isGroup": false,
+        "isRequired": false,
+        "isRecommended": true,
+        "isPattern": true,
+        "field": {
+          "type": "textarea",
+          "label": "Description",
+          "placeholder": "{{excerpt}}"
+        }
+      }
+    },
+    "reviewRating": {
+      "item": {
+        "isGroup": true,
+        "isRequired": false,
+        "isRecommended": true,
+        "isAdvanced": true
+      },
+      "type": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": false,
+          "value": "Rating"
+        }
+      },
+      "ratingValue": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "field": {
+            "type": "number",
+            "label": "Rating",
+            "help": "Rating score"
+          }
+        }
+      },
+      "worstRating": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "field": {
+            "type": "number",
+            "label": "Rating Minimum",
+            "help": "Rating minimum score",
+            "placeholder": 1
+          }
+        }
+      },
+      "bestRating": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": false,
+          "field": {
+            "type": "number",
+            "label": "Rating Maximum",
+            "help": "Rating maximum score",
+            "placeholder": 5
+          }
+        }
+      },
+      "alternateName": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": false,
+          "field": {
+            "type": "select",
+            "label": "Alternate Name",
+            "options": {
+              "False": "False",
+              "Mostly false": "Mostly false",
+              "Half true": "Half true",
+              "Mostly true": "Mostly true",
+              "True": "True"
+            },
+            "default": "False",
+            "help": "This value is displayed in the fact check in search results."
+          }
+        }
+      }
+    },
+    "url": {
+      "item": {
+        "isGroup": false,
+        "isRequired": false,
+        "isRecommended": false,
+        "field": {
+          "label": "URL"
+        }
+      }
+    },
+    "datePublished": {
+      "item": {
+        "isGroup": false,
+        "isRequired": false,
+        "isRecommended": true,
+        "isAdvanced": true,
+        "field": {
+          "type": "datetimepicker",
+          "label": "Published Date",
+          "placeholder": "{{date}}"
+        }
+      }
+    },
+    "itemReviewed": {
+      "item": {
+        "isGroup": true,
+        "isRequired": false,
+        "isRecommended": false
+      },
+      "type": {
+        "item": {
+          "isGroup": false,
+          "isRequired": true,
+          "isRecommended": false,
+          "value": "Claim"
+        }
+      },
+      "author": {
+        "item": {
+          "isGroup": true,
+          "isRequired": false,
+          "isRecommended": false,
+          "isAdvanced": true
+        },
+        "type": {
+          "item": {
+            "isGroup": false,
+            "isRequired": true,
+            "isRecommended": false,
+            "value": "Person"
+          }
+        },
+        "name": {
+          "item": {
+            "isGroup": false,
+            "isRequired": true,
+            "isRecommended": false,
+            "field": {
+              "label": "Author Name",
+              "placeholder": "{{name}}"
+            }
+          }
+        }
+      },
+      "datePublished": {
+        "item": {
+          "isGroup": false,
+          "isRequired": false,
+          "isRecommended": true,
+          "isAdvanced": true,
+          "field": {
+            "type": "datepicker",
+            "label": "Published Date",
+            "placeholder": "{{date}}"
+          }
+        }
+      },
+      "appearance": {
+        "type": {
+          "item": {
+            "isGroup": false,
+            "isRequired": true,
+            "isRecommended": false,
+            "value": "CreativeWork"
+          }
+        },
+        "headline": {
+          "item": {
+            "isGroup": false,
+            "isRequired": true,
+            "isRecommended": false,
+            "isPattern": true,
+            "field": {
+              "label": "Headline",
+              "placeholder": "{{title}}"
+            }
+          }
+        },
+        "url": {
+          "item": {
+            "isGroup": false,
+            "isRequired": false,
+            "isRecommended": false,
+            "field": {
+              "label": "URL"
+            }
+          }
+        },
+        "author": {
+          "item": {
+            "isGroup": true,
+            "isRequired": false,
+            "isRecommended": false,
+            "isAdvanced": true
+          },
+          "type": {
+            "item": {
+              "isGroup": false,
+              "isRequired": true,
+              "isRecommended": false,
+              "value": "Person"
+            }
+          },
+          "name": {
+            "item": {
+              "isGroup": false,
+              "isRequired": true,
+              "isRecommended": false,
+              "field": {
+                "label": "Author Name",
+                "placeholder": "{{name}}"
+              }
+            }
+          }
+        },
+        "datePublished": {
+          "item": {
+            "isGroup": false,
+            "isRequired": false,
+            "isRecommended": true,
+            "isAdvanced": true,
+            "field": {
+              "type": "datepicker",
+              "label": "Published Date",
+              "placeholder": "{{date}}"
+            }
+          }
+        }
+      }
+    },
+    "image": {
+      "item": {
+        "isGroup": false,
+        "isRequired": true,
+        "isRecommended": false,
+        "field": {
+          "label": "Image",
+          "placeholder": "{{image}}"
+        }
+      }
+    }
+  },
+  "Carusel": {
+    "item": {
+      "isGroup": true,
+      "isRequired": false,
+      "isRecommended": false
+    },
+    "type": {
+      "item": {
+        "isGroup": false,
+        "isRequired": true,
+        "isRecommended": false,
+        "value": "ItemList"
+      }
+    },
+    "itemListElement": [
+      {
+        "item": {
+          "isGroup": true,
+          "isRequired": false,
+          "isRecommended": true,
+          "isAdvanced": true
+        },
+        "type": {
+          "item": {
+            "isGroup": false,
+            "isRequired": true,
+            "isRecommended": false,
+            "value": "ListItem"
+          }
+        },
+        "position": {
+          "item": {
+            "isGroup": false,
+            "isRequired": false,
+            "isRecommended": false,
+            "field": {
+              "type": "number",
+              "label": "Position",
+              "help": "The item's position in the carousel. This is a 1-based number."
+            }
+          }
+        },
+        "url": {
+          "item": {
+            "isGroup": false,
+            "isRequired": false,
+            "isRecommended": false,
+            "field": {
+              "label": "URL",
+              "help": "The canonical URL of the item detail page. All URLs in the list must be unique, but live on the same domain",
+              "placeholder": "{{url}}"
+            }
+          }
+        },
+        "schema": {
+          "item": {
+            "isGroup": false,
+            "isRequired": false,
+            "isRecommended": false,
+            "field": {
+              "type": "select",
+              "label": "Schema Type",
+              "options": {
+                "Course": "Course",
+                "Movie": "Movie",
+                "Recipe": "Recipe",
+                "Restaurant": "Restaurant"
+              },
+              "help": "Select the schema type you already added on the specified URL"
+            }
+          }
+        }
+      }
+    ]
+  },
+  "WooCommerceProduct": {
+    "item": {
+      "isGroup": true,
+      "isRequired": false,
+      "isRecommended": false
+    }
+  },
+  "Breadcrumblist": {
+    "item": {
+      "isGroup": true,
+      "isRequired": false,
+      "isRecommended": false
+    },
+    "type": {
+      "item": {
+        "isGroup": false,
+        "isRequired": true,
+        "isRecommended": false,
+        "value": "BreadcrumbList"
+      }
+    },
+    "itemListElement": [
+      {
+        "item": {
+          "isGroup": true,
+          "isRequired": false,
+          "isRecommended": true,
+          "isAdvanced": false
+        },
+        "type": {
+          "item": {
+            "isGroup": false,
+            "isRequired": true,
+            "isRecommended": false,
+            "value": "ListItem"
+          }
+        },
+        "position": {
+          "item": {
+            "isGroup": false,
+            "isRequired": false,
+            "isRecommended": false,
+            "field": {
+              "type": "number",
+              "label": "Position",
+              "help": "The item's position in the breadcrumbs list."
+            }
+          }
+        },
+        "name": {
+          "item": {
+            "isGroup": false,
+            "isRequired": false,
+            "isRecommended": false,
+            "field": {
+              "label": "Name",
+              "help": "All names in the list must be unique"
+            }
+          }
+        },
+        "url": {
+          "item": {
+            "isGroup": false,
+            "isRequired": false,
+            "isRecommended": false,
+            "field": {
+              "label": "Url",
+              "help": "The URL of the current item. All URLs in the list must be unique"
+            }
+          }
+        }
+      }
+    ]
+  }
+}

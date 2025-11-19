@@ -1,0 +1,1073 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Squirrly SEO - Advanced Pack\n"
+"POT-Creation-Date: 2023-09-22 07:50+0300\n"
+"PO-Revision-Date: 2023-01-17 12:21+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"X-Generator: Poedit 3.3.2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: index.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+
+#: classes/helpers/Tools.php:636
+msgid "Previous"
+msgstr ""
+
+#: classes/helpers/Tools.php:637
+msgid "Next"
+msgstr ""
+
+#: controllers/Jsonld.php:461 view/Jsonld/Snippet.php:110
+msgid "Add New Schema"
+msgstr ""
+
+#: controllers/Jsonld.php:479 controllers/Jsonld.php:547
+#: controllers/Jsonld.php:832
+msgid "Can't be customized."
+msgstr ""
+
+#: controllers/Jsonld.php:517 controllers/Jsonld.php:811
+msgid "Reusable Name"
+msgstr ""
+
+#: controllers/Jsonld.php:518 controllers/Jsonld.php:787
+#: controllers/Jsonld.php:850
+msgid "Reusable"
+msgstr ""
+
+#: controllers/Jsonld.php:525
+msgid "You'll need to add it manually from reusable schemas after you save."
+msgstr ""
+
+#: controllers/Jsonld.php:526
+msgid "Cancel"
+msgstr ""
+
+#: controllers/Jsonld.php:527
+msgid "Save Reusable"
+msgstr ""
+
+#: controllers/Jsonld.php:531
+msgid "Save As Reusable"
+msgstr ""
+
+#: controllers/Jsonld.php:534
+msgid "It's already a reusable."
+msgstr ""
+
+#: controllers/Jsonld.php:567 controllers/Jsonld.php:573
+#: controllers/Jsonld.php:859 controllers/Jsonld.php:864
+#: controllers/Jsonld.php:889 controllers/Jsonld.php:895
+#: controllers/Jsonld.php:931 controllers/Redirects.php:301
+#: controllers/Redirects.php:440
+msgid "Saved!"
+msgstr ""
+
+#: controllers/Jsonld.php:580 controllers/Jsonld.php:614
+#: controllers/Jsonld.php:868 controllers/Jsonld.php:902
+#: controllers/Redirects.php:235
+msgid "Invalid data"
+msgstr ""
+
+#: controllers/Jsonld.php:631
+msgid "Deleted!"
+msgstr ""
+
+#: controllers/Jsonld.php:650
+#, php-format
+msgid "Successfully imported %d schemas(s)!"
+msgstr ""
+
+#: controllers/Jsonld.php:652
+msgid "No schemas found to import."
+msgstr ""
+
+#: controllers/Jsonld.php:701 controllers/Redirects.php:503
+msgid "Great! The backup is restored."
+msgstr ""
+
+#: controllers/Jsonld.php:704 controllers/Jsonld.php:707
+#: controllers/Redirects.php:506 controllers/Redirects.php:509
+msgid "Error! The backup is not valid."
+msgstr ""
+
+#: controllers/Jsonld.php:710 controllers/Redirects.php:512
+msgid "Error! You have to enter a previously saved backup file."
+msgstr ""
+
+#: controllers/Jsonld.php:741 view/Jsonld/Reusable.php:136
+msgid "No reusable schemas found."
+msgstr ""
+
+#: controllers/Jsonld.php:741
+#, php-format
+msgid "%s Add reusable schema %s."
+msgstr ""
+
+#: controllers/Jsonld.php:744 view/Jsonld/Snippet.php:112
+msgid "Add Reusable Schema"
+msgstr ""
+
+#: controllers/Jsonld.php:815
+msgid "Enter a name for this reusable field"
+msgstr ""
+
+#: controllers/Jsonld.php:822
+msgid "Edit Reusable Schema"
+msgstr ""
+
+#: controllers/Jsonld.php:910 controllers/Redirects.php:291
+msgid "You do not have permission to perform this action!"
+msgstr ""
+
+#: controllers/Jsonld.php:933 controllers/Redirects.php:303
+msgid "Invalid Rule!"
+msgstr ""
+
+#: controllers/MediaLibrary.php:48 controllers/MediaLibrary.php:102
+msgid "You are not allowed to perform this action"
+msgstr ""
+
+#: controllers/MediaLibrary.php:56
+msgid "Need to send URL of the image to be downloaded"
+msgstr ""
+
+#: controllers/MediaLibrary.php:78
+msgid "Could not download the image."
+msgstr ""
+
+#: controllers/Menu.php:23
+#, php-format
+msgid "requires Squirrly SEO plugin version %s to be activate."
+msgstr ""
+
+#: controllers/Menu.php:159
+msgid "NEW"
+msgstr ""
+
+#: controllers/Redirects.php:96
+msgid ""
+"Cron is disabled in config with DISABLE_WP_CRON declaration. Make sure the "
+"cron is working and the log is cleared."
+msgstr ""
+
+#: controllers/Redirects.php:128
+msgid "301 - Moved Permanently"
+msgstr ""
+
+#: controllers/Redirects.php:129
+msgid "302 - Found"
+msgstr ""
+
+#: controllers/Redirects.php:130
+msgid "307 - Temporary Redirect"
+msgstr ""
+
+#: controllers/Redirects.php:131
+msgid "308 - Permanent Redirect"
+msgstr ""
+
+#: controllers/Redirects.php:132
+msgid "404 - Page Not Found"
+msgstr ""
+
+#: controllers/Redirects.php:146
+msgid "Exact URL match"
+msgstr ""
+
+#: controllers/Redirects.php:147
+msgid "Ignore all query parameters"
+msgstr ""
+
+#: controllers/Redirects.php:148
+msgid "Ignore and pass all query parameters"
+msgstr ""
+
+#: controllers/Redirects.php:162
+msgid "Custom Redirects"
+msgstr ""
+
+#: controllers/Redirects.php:163
+msgid "Post Redirects"
+msgstr ""
+
+#: controllers/Redirects.php:164
+msgid "Slug Changed Redirects"
+msgstr ""
+
+#: controllers/Redirects.php:457
+#, php-format
+msgid "Successfully imported %d redirect(s)!"
+msgstr ""
+
+#: controllers/Redirects.php:459
+msgid "No redirects found to import."
+msgstr ""
+
+#: models/Html.php:54 view/Jsonld/Snippet.php:25
+msgid "Save"
+msgstr ""
+
+#: models/Html.php:74
+msgid "Are you sure?"
+msgstr ""
+
+#: models/Html.php:100
+msgid "Search Schema"
+msgstr ""
+
+#: models/Images.php:89
+msgid "All"
+msgstr ""
+
+#: models/Images.php:90
+msgid "Animals"
+msgstr ""
+
+#: models/Images.php:91
+msgid "Architecture/Buildings"
+msgstr ""
+
+#: models/Images.php:92
+msgid "Backgrounds/Textures"
+msgstr ""
+
+#: models/Images.php:93
+msgid "Beauty/Fashion"
+msgstr ""
+
+#: models/Images.php:94
+msgid "Business/Finance"
+msgstr ""
+
+#: models/Images.php:95
+msgid "Computer/Communication"
+msgstr ""
+
+#: models/Images.php:96
+msgid "Education"
+msgstr ""
+
+#: models/Images.php:97
+msgid "Emotions"
+msgstr ""
+
+#: models/Images.php:98
+msgid "Food/Drink"
+msgstr ""
+
+#: models/Images.php:99
+msgid "Health/Medical"
+msgstr ""
+
+#: models/Images.php:100
+msgid "Industry/Craft"
+msgstr ""
+
+#: models/Images.php:101
+msgid "Music"
+msgstr ""
+
+#: models/Images.php:102
+msgid "Nature/Landscapes"
+msgstr ""
+
+#: models/Images.php:103
+msgid "People"
+msgstr ""
+
+#: models/Images.php:104
+msgid "Places/Monuments"
+msgstr ""
+
+#: models/Images.php:105
+msgid "Religion"
+msgstr ""
+
+#: models/Images.php:106
+msgid "Science/Technology"
+msgstr ""
+
+#: models/Images.php:107
+msgid "Sports"
+msgstr ""
+
+#: models/Images.php:108
+msgid "Transportation/Traffic"
+msgstr ""
+
+#: models/Images.php:109
+msgid "Travel/Vacation"
+msgstr ""
+
+#: models/Images.php:112
+msgid "Popular"
+msgstr ""
+
+#: models/Images.php:113
+msgid "Latest"
+msgstr ""
+
+#: models/Images.php:114
+msgid "Upcoming"
+msgstr ""
+
+#: models/Images.php:115
+msgid "Editor's Choice"
+msgstr ""
+
+#: models/Images.php:118
+msgid "Any Orientation"
+msgstr ""
+
+#: models/Images.php:119
+msgid "Vertical"
+msgstr ""
+
+#: models/Images.php:120
+msgid "Horizontal"
+msgstr ""
+
+#: models/Images.php:122
+msgid "Squirrly Free Images"
+msgstr ""
+
+#: models/Images.php:123
+msgid "Search - Ex: flowers"
+msgstr ""
+
+#: models/Images.php:124
+msgid "Downloading..."
+msgstr ""
+
+#: models/Images.php:125
+msgid "Validating..."
+msgstr ""
+
+#: models/Images.php:126
+msgid "Please enter an API key."
+msgstr ""
+
+#: models/Images.php:127
+msgid "An error occured with code "
+msgstr ""
+
+#: models/Menu.php:12
+msgid "Redirects"
+msgstr ""
+
+#: models/Menu.php:23
+msgid "Reusable Schemas"
+msgstr ""
+
+#: models/Menu.php:51
+msgid "No Categories"
+msgstr ""
+
+#: models/Menu.php:60
+msgid "Rules"
+msgstr ""
+
+#: models/Menu.php:66
+msgid "Logs"
+msgstr ""
+
+#: models/Menu.php:72 models/Menu.php:93
+msgid "Import & Data"
+msgstr ""
+
+#: models/Menu.php:78 models/Menu.php:99
+msgid "Settings"
+msgstr ""
+
+#: models/Menu.php:87 view/Jsonld/Snippet.php:31
+msgid "Schemas"
+msgstr ""
+
+#: models/domain/Jsonld.php:458 view/Jsonld/Reusable.php:112
+msgid "Edit Schema"
+msgstr ""
+
+#: models/domain/Jsonld.php:515
+msgid "Add"
+msgstr ""
+
+#: models/jsonld/Database.php:452
+msgid "Can't create the table. Please check the database permissions."
+msgstr ""
+
+#: models/jsonld/Import.php:11 models/redirects/Import.php:23
+msgid "Rank Math"
+msgstr ""
+
+#: models/redirects/Admin.php:425
+msgid "You can't set the same path on redirect."
+msgstr ""
+
+#: models/redirects/Admin.php:470 models/redirects/Log.php:215
+msgid ""
+"Can't create the redirects table. Please check the database permissions."
+msgstr ""
+
+#: models/redirects/Import.php:11
+msgid "Eps 301 Redirects"
+msgstr ""
+
+#: models/redirects/Import.php:15
+msgid "All In One SEO"
+msgstr ""
+
+#: models/redirects/Import.php:19
+msgid "Redirection"
+msgstr ""
+
+#: models/redirects/Import.php:27
+msgid "Quick Redirects"
+msgstr ""
+
+#: models/redirects/Import.php:31
+msgid "Squirrly SEO"
+msgstr ""
+
+#: models/redirects/Import.php:35
+msgid "SEO Framework"
+msgstr ""
+
+#: models/redirects/Import.php:40
+msgid "SEO Press"
+msgstr ""
+
+#: models/redirects/Import.php:44
+msgid "Yoast SEO"
+msgstr ""
+
+#: models/redirects/Import.php:48
+msgid "WordPress Core (Slug Changes)"
+msgstr ""
+
+#: update/v5p1/Plugin/Ui.php:56
+msgid "View details"
+msgstr ""
+
+#: update/v5p1/Plugin/Ui.php:79
+#, php-format
+msgid "More information about %s"
+msgstr ""
+
+#: update/v5p1/Plugin/Ui.php:130
+msgid "Check for updates"
+msgstr ""
+
+#: update/v5p1/Plugin/Ui.php:217
+#, php-format
+msgctxt "the plugin title"
+msgid "The %s plugin is up to date."
+msgstr ""
+
+#: update/v5p1/Plugin/Ui.php:219
+#, php-format
+msgctxt "the plugin title"
+msgid "A new version of the %s plugin is available."
+msgstr ""
+
+#: update/v5p1/Plugin/Ui.php:221
+#, php-format
+msgctxt "the plugin title"
+msgid "Could not determine if updates are available for %s."
+msgstr ""
+
+#: update/v5p1/Plugin/Ui.php:227
+#, php-format
+msgid "Unknown update checker status \"%s\""
+msgstr ""
+
+#: update/v5p1/Vcs/PluginUpdateChecker.php:98
+msgid "There is no changelog available."
+msgstr ""
+
+#: view/Blocks/ImageTemplates.php:40 view/Blocks/ImageTemplates.php:80
+#: view/Blocks/MediaLibrary.php:40 view/Blocks/MediaLibrary.php:80
+msgid "Sorry No Results Found."
+msgstr ""
+
+#: view/Blocks/ImageTemplates.php:70 view/Blocks/MediaLibrary.php:70
+msgid "SafeSearch"
+msgstr ""
+
+#: view/Blocks/ImageTemplates.php:74 view/Blocks/MediaLibrary.php:74
+msgid "Powered by"
+msgstr ""
+
+#: view/Blocks/ImageTemplates.php:102 view/Blocks/MediaLibrary.php:102
+msgid "Back to Images"
+msgstr ""
+
+#: view/Blocks/ImageTemplates.php:112 view/Blocks/MediaLibrary.php:112
+msgid "Already Saved"
+msgstr ""
+
+#: view/Blocks/ImageTemplates.php:114 view/Blocks/MediaLibrary.php:114
+msgid "Save & Insert"
+msgstr ""
+
+#: view/Blocks/Jsonld/Backup.php:14
+msgid "Backup Schemas"
+msgstr ""
+
+#: view/Blocks/Jsonld/Backup.php:15
+msgid "Download all the Squirrly Schemas for Rich Snippets."
+msgstr ""
+
+#: view/Blocks/Jsonld/Backup.php:20
+msgid "Download Schemas"
+msgstr ""
+
+#: view/Blocks/Jsonld/Import.php:17 view/Blocks/Jsonld/Import.php:36
+msgid "Import Schemas"
+msgstr ""
+
+#: view/Blocks/Jsonld/Import.php:19
+msgid ""
+"Select the plugin you want to import the Schemas for Rich Snippets from."
+msgstr ""
+
+#: view/Blocks/Jsonld/Import.php:38
+msgid "Note! It will overwrite the same schemas you already set."
+msgstr ""
+
+#: view/Blocks/Jsonld/Import.php:41 view/Blocks/Redirects/Import.php:40
+msgid "We couldn't find any Plugin to import from."
+msgstr ""
+
+#: view/Blocks/Jsonld/Restore.php:14 view/Blocks/Jsonld/Restore.php:23
+msgid "Restore Schemas"
+msgstr ""
+
+#: view/Blocks/Jsonld/Restore.php:15
+msgid "Upload the file with the saved Squirrly Schemas for Rich Snippets."
+msgstr ""
+
+#: view/Blocks/Menu.php:18
+msgid "Back To Home"
+msgstr ""
+
+#: view/Blocks/Menu.php:50
+msgid "Collapse"
+msgstr ""
+
+#: view/Blocks/Modal.php:13
+msgctxt "squirrly modal menu actions"
+msgid "Actions"
+msgstr ""
+
+#: view/Blocks/Modal.php:15
+msgctxt "squirrly modal menu"
+msgid "Menu"
+msgstr ""
+
+#. translators: Accessibility text.
+#: view/Blocks/Modal.php:26
+msgid "Selected squirrly actions"
+msgstr ""
+
+#: view/Blocks/Modal.php:37
+msgid "Close dialog"
+msgstr ""
+
+#: view/Blocks/Redirects/Backup.php:14
+msgid "Backup Redirects"
+msgstr ""
+
+#: view/Blocks/Redirects/Backup.php:15
+msgid "Download all the Squirrly SEO Redirects."
+msgstr ""
+
+#: view/Blocks/Redirects/Backup.php:20
+msgid "Download Backup"
+msgstr ""
+
+#: view/Blocks/Redirects/Import.php:16
+msgid "Import Redirect From"
+msgstr ""
+
+#: view/Blocks/Redirects/Import.php:18
+msgid "Select the plugin you want to import the Redirect from."
+msgstr ""
+
+#: view/Blocks/Redirects/Import.php:35
+msgid "Import Redirects"
+msgstr ""
+
+#: view/Blocks/Redirects/Import.php:37
+msgid ""
+"Note! It will overwrite the redirects you set if there are the same paths."
+msgstr ""
+
+#: view/Blocks/Redirects/Restore.php:14 view/Blocks/Redirects/Restore.php:23
+msgid "Restore Redirects"
+msgstr ""
+
+#: view/Blocks/Redirects/Restore.php:15
+msgid "Upload the file with the saved Squirrly Redirects."
+msgstr ""
+
+#: view/Jsonld/Reusable.php:17 view/Redirects/Log.php:16
+#: view/Redirects/Rules.php:17 view/Redirects/Settings.php:17
+msgid "You do not have permission to access this page."
+msgstr ""
+
+#: view/Jsonld/Reusable.php:28
+msgid "Rich Snippets - Reusable Schemas"
+msgstr ""
+
+#: view/Jsonld/Reusable.php:34
+msgid "The list of reusable schemas from Rich Snippets."
+msgstr ""
+
+#: view/Jsonld/Reusable.php:43
+msgid "Create Reusable Schema"
+msgstr ""
+
+#: view/Jsonld/Reusable.php:52 view/Redirects/Rules.php:52
+msgid "Bulk Actions"
+msgstr ""
+
+#: view/Jsonld/Reusable.php:53
+msgid "Are you sure you want to delete reusable schemas?"
+msgstr ""
+
+#: view/Jsonld/Reusable.php:53 view/Redirects/Rules.php:53
+msgid "Delete"
+msgstr ""
+
+#: view/Jsonld/Reusable.php:55 view/Redirects/Rules.php:55
+msgid "Apply"
+msgstr ""
+
+#: view/Jsonld/Reusable.php:66
+msgid "Write the name you want to search for"
+msgstr ""
+
+#: view/Jsonld/Reusable.php:67 view/Redirects/Log.php:65
+#: view/Redirects/Rules.php:89
+msgid "Search"
+msgstr ""
+
+#: view/Jsonld/Reusable.php:69 view/Redirects/Log.php:67
+#: view/Redirects/Rules.php:91
+msgid "Show All"
+msgstr ""
+
+#: view/Jsonld/Reusable.php:80
+msgid "Name"
+msgstr ""
+
+#: view/Jsonld/Reusable.php:81
+msgid "Schema Type"
+msgstr ""
+
+#: view/Jsonld/Reusable.php:115
+msgid "Do you want to delete Schema?"
+msgstr ""
+
+#: view/Jsonld/Reusable.php:121
+msgid "Delete Schema"
+msgstr ""
+
+#: view/Jsonld/Reusable.php:149 view/Redirects/Log.php:128
+#: view/Redirects/Rules.php:240
+msgid "records"
+msgstr ""
+
+#: view/Jsonld/Snippet.php:16
+#, php-format
+msgid ""
+"JSON-LD is disable for this Post Type (%s). See %s Squirrly > Automation > "
+"Configuration %s."
+msgstr ""
+
+#: view/Jsonld/Snippet.php:24
+msgid "Refresh"
+msgstr ""
+
+#: view/Jsonld/Snippet.php:34
+msgid "JSON-LD Code"
+msgstr ""
+
+#: view/Jsonld/Snippet.php:77
+msgid "Automation"
+msgstr ""
+
+#: view/Jsonld/Snippet.php:123
+msgid "Validate JSON-LD"
+msgstr ""
+
+#: view/Jsonld/Snippet.php:145
+msgid ""
+"To edit the snippet, you have to activate Squirrly SEO for this page first"
+msgstr ""
+
+#: view/Redirects/Log.php:28
+msgid "Redirects Log"
+msgstr ""
+
+#: view/Redirects/Log.php:64 view/Redirects/Rules.php:88
+msgid "Write the redirect you want to search for"
+msgstr ""
+
+#: view/Redirects/Log.php:77 view/Redirects/Rules.php:102
+msgid "URL From"
+msgstr ""
+
+#: view/Redirects/Log.php:79 view/Redirects/Rules.php:103
+msgid "URL To"
+msgstr ""
+
+#: view/Redirects/Log.php:81 view/Redirects/Rules.php:104
+msgid "Code"
+msgstr ""
+
+#: view/Redirects/Log.php:82
+msgid "Access"
+msgstr ""
+
+#: view/Redirects/Log.php:113
+msgid "No log found"
+msgstr ""
+
+#: view/Redirects/Log.php:144
+msgid "Are you sure you want to empty the log?"
+msgstr ""
+
+#: view/Redirects/Log.php:144
+msgid "Clear All Log"
+msgstr ""
+
+#: view/Redirects/Rules.php:28
+msgid "Redirects Rules"
+msgstr ""
+
+#: view/Redirects/Rules.php:34
+msgid "The list of redirect and rules from Squirrly SEO."
+msgstr ""
+
+#: view/Redirects/Rules.php:43
+msgid "Add Custom Redirect"
+msgstr ""
+
+#: view/Redirects/Rules.php:53
+msgid "Are you sure you want to delete the rules?"
+msgstr ""
+
+#: view/Redirects/Rules.php:67
+msgid "All redirects"
+msgstr ""
+
+#: view/Redirects/Rules.php:105
+msgid "Hits"
+msgstr ""
+
+#: view/Redirects/Rules.php:106
+msgid "Last Access"
+msgstr ""
+
+#: view/Redirects/Rules.php:180 view/Redirects/Rules.php:408
+msgid "Edit Redirect"
+msgstr ""
+
+#: view/Redirects/Rules.php:190
+msgid "Disable Redirect"
+msgstr ""
+
+#: view/Redirects/Rules.php:200
+msgid "Enable Redirect"
+msgstr ""
+
+#: view/Redirects/Rules.php:206
+msgid "Do you want to delete the Redirect?"
+msgstr ""
+
+#: view/Redirects/Rules.php:212
+msgid "Delete Redirect"
+msgstr ""
+
+#: view/Redirects/Rules.php:227
+msgid "No redirects found"
+msgstr ""
+
+#: view/Redirects/Rules.php:261
+msgid "Export Redirects"
+msgstr ""
+
+#: view/Redirects/Rules.php:277
+msgid "Add New Redirect"
+msgstr ""
+
+#: view/Redirects/Rules.php:291 view/Redirects/Rules.php:414
+msgid "Redirect From"
+msgstr ""
+
+#: view/Redirects/Rules.php:295 view/Redirects/Rules.php:418
+msgid "Redirect To"
+msgstr ""
+
+#: view/Redirects/Rules.php:301 view/Redirects/Rules.php:424
+msgid "URL Matching"
+msgstr ""
+
+#: view/Redirects/Rules.php:302 view/Redirects/Rules.php:425
+msgid "Select the URL matching type."
+msgstr ""
+
+#: view/Redirects/Rules.php:317 view/Redirects/Rules.php:438
+msgid "Redirect Type"
+msgstr ""
+
+#: view/Redirects/Rules.php:318 view/Redirects/Rules.php:439
+#: view/Redirects/Settings.php:107
+msgid "Select the code that will be added in the header of the redirect."
+msgstr ""
+
+#: view/Redirects/Rules.php:334 view/Redirects/Rules.php:455
+msgid "More Options"
+msgstr ""
+
+#: view/Redirects/Rules.php:345
+msgid "Regex Match"
+msgstr ""
+
+#: view/Redirects/Rules.php:355 view/Redirects/Rules.php:478
+msgid "Ignore Case"
+msgstr ""
+
+#: view/Redirects/Rules.php:365 view/Redirects/Rules.php:488
+msgid "Ignore Slash"
+msgstr ""
+
+#: view/Redirects/Rules.php:372
+msgid "Add Redirect"
+msgstr ""
+
+#: view/Redirects/Rules.php:468
+msgid "Regex Redirect Match"
+msgstr ""
+
+#: view/Redirects/Rules.php:495
+msgid "Redirect Order"
+msgstr ""
+
+#: view/Redirects/Rules.php:506
+msgid "Save Redirect"
+msgstr ""
+
+#: view/Redirects/Settings.php:35
+msgid "Redirects Settings"
+msgstr ""
+
+#: view/Redirects/Settings.php:52
+msgid "Use Redirect Cache"
+msgstr ""
+
+#: view/Redirects/Settings.php:55
+msgid "Load redirects from cache and improve the redirect speed."
+msgstr ""
+
+#: view/Redirects/Settings.php:66
+msgid "Track Redirect Hits"
+msgstr ""
+
+#: view/Redirects/Settings.php:69
+msgid ""
+"Track redirect hits and date of last access. Contains no user information."
+msgstr ""
+
+#: view/Redirects/Settings.php:76
+msgid "Default URL Matching"
+msgstr ""
+
+#: view/Redirects/Settings.php:79
+msgid "Select the default URL matching when adding new rules."
+msgstr ""
+
+#: view/Redirects/Settings.php:104
+msgid "Default Redirect Type"
+msgstr ""
+
+#: view/Redirects/Settings.php:123
+msgid "Default Ignore Case"
+msgstr ""
+
+#: view/Redirects/Settings.php:126
+msgid "Case insensitive matches (i.e. /Source-URL will match /source-post)"
+msgstr ""
+
+#: view/Redirects/Settings.php:136
+msgid "Default Ignore Slash"
+msgstr ""
+
+#: view/Redirects/Settings.php:139
+msgid "Ignore trailing slashes (i.e. /source-post/ will match /source-post)"
+msgstr ""
+
+#: view/Redirects/Settings.php:145
+msgid "Post Types Settings"
+msgstr ""
+
+#: view/Redirects/Settings.php:156
+msgid "Redirect Changed Paths"
+msgstr ""
+
+#: view/Redirects/Settings.php:158
+msgid ""
+"Redirect to the new path when it's changed with a new path in Post Editor."
+msgstr ""
+
+#: view/Redirects/Settings.php:177
+msgid "Select the post types you want to monitor when a path is changed."
+msgstr ""
+
+#: view/Redirects/Settings.php:190
+msgid "Redirect Broken URLs"
+msgstr ""
+
+#: view/Redirects/Settings.php:192
+msgid ""
+"Redirect all the not found posts to a specific URL and prevent 404 pages."
+msgstr ""
+
+#: view/Redirects/Settings.php:204
+msgid "Logging"
+msgstr ""
+
+#: view/Redirects/Settings.php:212
+msgid "404 Monitor"
+msgstr ""
+
+#: view/Redirects/Settings.php:215
+msgid "Monitor & keep a log with all the 404 errors."
+msgstr ""
+
+#: view/Redirects/Settings.php:225
+msgid "Log Redirects"
+msgstr ""
+
+#: view/Redirects/Settings.php:228
+msgid "Keep a log with all the redirects."
+msgstr ""
+
+#: view/Redirects/Settings.php:236
+msgid "Log days"
+msgstr ""
+
+#: view/Redirects/Settings.php:237
+msgid "Select the number of days you want to keep the log for."
+msgstr ""
+
+#: view/Redirects/Settings.php:245
+msgid "days"
+msgstr ""
+
+#: view/Redirects/Settings.php:258
+msgid "Log HTTP Header"
+msgstr ""
+
+#: view/Redirects/Settings.php:261
+msgid ""
+"Capture HTTP header information with logs (except cookies). It may include "
+"user information, and could increase your log size."
+msgstr ""
+
+#: view/Redirects/Settings.php:274 view/SeoSettings/Category.php:90
+msgid "Save Settings"
+msgstr ""
+
+#: view/SeoSettings/Category.php:16
+msgid ""
+"You do not have permission to access this page. You need Squirrly SEO Admin "
+"role."
+msgstr ""
+
+#: view/SeoSettings/Category.php:31
+msgid "No Category Base"
+msgstr ""
+
+#: view/SeoSettings/Category.php:37
+msgid ""
+"This can make your category URLs more aesthetically appealing, more "
+"intuitive, as well as easier to understand and remember by site visitors."
+msgstr ""
+
+#: view/SeoSettings/Category.php:50
+msgid "Hide Category Base"
+msgstr ""
+
+#: view/SeoSettings/Category.php:51
+msgid "Remove the category base from all post categories."
+msgstr ""
+
+#: view/SeoSettings/Category.php:64
+msgid "Hide Category Base for Woocommerce"
+msgstr ""
+
+#: view/SeoSettings/Category.php:65
+msgid "Remove the category base from all products categories."
+msgstr ""
+
+#: view/SeoSettings/Category.php:77
+msgid "Hide Product Base for Woocommerce"
+msgstr ""
+
+#: view/SeoSettings/Category.php:78
+msgid "Remove the product base from all Woocommerce products."
+msgstr ""
+
+#: view/SeoSettings/Images.php:16
+msgid "Squirrly Free Images in Media Library"
+msgstr ""
+
+#: view/SeoSettings/Images.php:17
+msgid "Load Free Images tab in Media Library from Pixabay."
+msgstr ""
+
+#: view/assets/js/jsonld/reusable.js:30 view/assets/js/jsonld/reusable.js:60
+#: view/assets/js/jsonld/reusable.js:149 view/assets/js/jsonld/schemas.js:143
+#: view/assets/js/jsonld/schemas.js:169 view/assets/js/jsonld/schemas.js:300
+#: view/assets/js/jsonld/schemas.js:474 view/assets/js/jsonld/schemas.js:562
+msgid "An error occurred, please refresh the page."
+msgstr ""
+
+#: view/assets/js/jsonld/schemas.js:325
+msgid "Copied"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "Squirrly SEO - Advanced Pack"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "https://wordpress.org/plugins/squirrly-seo/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Advanced Pack for Squirrly SEO"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Squirrly"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://plugin.squirrly.co"
+msgstr ""
